@@ -4,10 +4,6 @@ const config: CapacitorConfig = {
   appId: 'com.thekitchenhq.app',
   appName: 'the-kitchen',
   webDir: 'dist',
-  server: {
-    url: 'the-kitchen.org',
-    cleartext: true,
-  },
   ios: {
     contentInset: 'always',
     scheme: 'TheKitchen',
