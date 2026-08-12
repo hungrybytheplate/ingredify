@@ -31,7 +31,7 @@ export function SEOHead({
     // Update canonical URL
     const canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) {
-      canonical.setAttribute("href", `https://the-kitchen.org${canonicalPath}`);
+      canonical.setAttribute("href", `https://ingredify.org${canonicalPath}`);
     }
     
     // Update OG tags
@@ -42,7 +42,7 @@ export function SEOHead({
     if (ogDescription) ogDescription.setAttribute("content", description);
     
     const ogUrl = document.querySelector('meta[property="og:url"]');
-    if (ogUrl) ogUrl.setAttribute("href", `https://the-kitchen.org${canonicalPath}`);
+    if (ogUrl) ogUrl.setAttribute("href", `https://ingredify.org${canonicalPath}`);
     
     // Update Twitter tags
     const twitterTitle = document.querySelector('meta[name="twitter:title"]');
@@ -94,7 +94,7 @@ export function generateRecipeSchema(recipe: {
       "name": "The Kitchen"
     },
     "datePublished": "2025-01-01",
-    "image": `https://the-kitchen.org/og-image.png`,
+    "image": `https://ingredify.org/og-image.png`,
     "recipeCategory": recipe.mealType,
     "recipeCuisine": "American",
     "prepTime": "PT10M",
@@ -143,8 +143,8 @@ export function generateRecipeCollectionSchema() {
       "item": {
         "@type": "Recipe",
         "name": recipe.title,
-        "url": `https://the-kitchen.org/?recipe=${recipe.id}`,
-        "image": "https://the-kitchen.org/og-image.png",
+        "url": `https://ingredify.org/?recipe=${recipe.id}`,
+        "image": "https://ingredify.org/og-image.png",
         "author": {
           "@type": "Organization",
           "name": "The Kitchen"

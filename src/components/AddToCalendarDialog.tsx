@@ -122,7 +122,7 @@ function generateCalendarLinks(recipe: Recipe, date: Date, mealTimes: MealTimes)
     descriptionParts.push('', `🏷️ Tags: ${recipe.dietaryTags.join(', ')}`);
   }
   
-  descriptionParts.push('', '🔗 Made with The Kitchen - the-kitchen.org');
+  descriptionParts.push('', '🔗 Made with The Kitchen - ingredify.org');
   
   const fullDescription = descriptionParts.join('\n');
   

@@ -264,18 +264,18 @@ export default function Pantry() {
           name: "My Pantry",
           description:
             "Save your baseline pantry, fridge, and spice ingredients so The Kitchen can pre-select them every time you look for a recipe.",
-          url: "https://the-kitchen.org/pantry",
+          url: "https://ingredify.org/pantry",
           inLanguage: "en",
           isPartOf: {
             "@type": "WebSite",
             name: "The Kitchen",
-            url: "https://the-kitchen.org/",
+            url: "https://ingredify.org/",
           },
           breadcrumb: {
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://the-kitchen.org/" },
-              { "@type": "ListItem", position: 2, name: "Pantry", item: "https://the-kitchen.org/pantry" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://ingredify.org/" },
+              { "@type": "ListItem", position: 2, name: "Pantry", item: "https://ingredify.org/pantry" },
             ],
           },
         }}

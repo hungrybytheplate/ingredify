@@ -24,19 +24,19 @@ export default function Privacy() {
           name: "Privacy Policy",
           description:
             "How The Kitchen collects, stores, and protects your data. We do not sell your data, do not use it for advertising, and do not share it with data brokers.",
-          url: "https://the-kitchen.org/privacy",
+          url: "https://ingredify.org/privacy",
           inLanguage: "en",
           isPartOf: {
             "@type": "WebSite",
             name: "The Kitchen",
-            url: "https://the-kitchen.org/",
+            url: "https://ingredify.org/",
           },
           dateModified: "2026-04-30",
           breadcrumb: {
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://the-kitchen.org/" },
-              { "@type": "ListItem", position: 2, name: "Privacy Policy", item: "https://the-kitchen.org/privacy" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://ingredify.org/" },
+              { "@type": "ListItem", position: 2, name: "Privacy Policy", item: "https://ingredify.org/privacy" },
             ],
           },
         }}

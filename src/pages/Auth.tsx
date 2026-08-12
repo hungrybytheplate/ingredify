@@ -332,18 +332,18 @@ export default function Auth() {
           name: "Sign In to The Kitchen",
           description:
             "Sign in or create a free account to sync your saved recipes, meal plans, and shopping list across devices.",
-          url: "https://the-kitchen.org/auth",
+          url: "https://ingredify.org/auth",
           inLanguage: "en",
           isPartOf: {
             "@type": "WebSite",
             name: "The Kitchen",
-            url: "https://the-kitchen.org/",
+            url: "https://ingredify.org/",
           },
           breadcrumb: {
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://the-kitchen.org/" },
-              { "@type": "ListItem", position: 2, name: "Sign In", item: "https://the-kitchen.org/auth" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://ingredify.org/" },
+              { "@type": "ListItem", position: 2, name: "Sign In", item: "https://ingredify.org/auth" },
             ],
           },
         }}
