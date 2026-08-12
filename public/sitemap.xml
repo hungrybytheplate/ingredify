@@ -7,12 +7,12 @@
   
   <!-- Homepage - Recipe Finder -->
   <url>
-    <loc>https://the-kitchen.org/</loc>
+    <loc>https://ingredify.org/</loc>
     <lastmod>2026-02-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://the-kitchen.org/og-image.png</image:loc>
+      <image:loc>https://ingredify.org/og-image.png</image:loc>
       <image:title>The Kitchen - Recipe Finder and Meal Planner</image:title>
       <image:caption>Find recipes based on ingredients you already have at home</image:caption>
     </image:image>
@@ -20,7 +20,7 @@
   
   <!-- Authentication Page -->
   <url>
-    <loc>https://the-kitchen.org/auth</loc>
+    <loc>https://ingredify.org/auth</loc>
     <lastmod>2026-02-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -28,7 +28,7 @@
   
   <!-- Install/PWA Page -->
   <url>
-    <loc>https://the-kitchen.org/install</loc>
+    <loc>https://ingredify.org/install</loc>
     <lastmod>2026-02-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -36,7 +36,7 @@
   
   <!-- Pantry Management -->
   <url>
-    <loc>https://the-kitchen.org/pantry</loc>
+    <loc>https://ingredify.org/pantry</loc>
     <lastmod>2026-02-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -44,7 +44,7 @@
   
   <!-- Privacy Policy -->
   <url>
-    <loc>https://the-kitchen.org/privacy</loc>
+    <loc>https://ingredify.org/privacy</loc>
     <lastmod>2026-04-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

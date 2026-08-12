@@ -1,4 +1,4 @@
-# Robots.txt for The Kitchen - https://the-kitchen.org
+# Robots.txt for The Kitchen - https://ingredify.org
 
 # Main search engine crawlers
 User-agent: Googlebot
@@ -45,7 +45,7 @@ Disallow: /_next/
 Disallow: /*.json$
 
 # Sitemap location
-Sitemap: https://the-kitchen.org/sitemap.xml
+Sitemap: https://ingredify.org/sitemap.xml
 
 # Host directive for Yandex
-Host: https://the-kitchen.org
+Host: https://ingredify.org
