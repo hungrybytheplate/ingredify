@@ -36,9 +36,9 @@ interface TourStep {
 const steps: TourStep[] = [
   {
     icon: ChefHat,
-    title: "Welcome to Ingredify!",
-    description: "Your personal meal planning assistant. Let's take a quick tour to help you get started.",
-    highlight: "Let's cook something delicious together",
+    title: "Welcome to Ingredify",
+    description: "Tell us what's already in your kitchen and we'll match it to recipes and drinks you can make right now — then help you plan, shop, and cook it.",
+    highlight: "Cook with what you already have",
   },
   {
     icon: Refrigerator,
