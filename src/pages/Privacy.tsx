@@ -65,7 +65,6 @@ export default function Privacy() {
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
               <li><strong>Account info:</strong> email address and a unique user ID, used to sign you in and sync your data across devices.</li>
               <li><strong>Your content:</strong> saved recipes, meal plans, shopping lists, recipe notes, ratings, pantry selections, and dietary preferences.</li>
-              <li><strong>Imported recipes:</strong> if you use "Import from URL", the link you paste is sent to our recipe parser so we can extract the ingredients and steps for you.</li>
             </ul>
           </section>
 
@@ -93,7 +92,7 @@ export default function Privacy() {
           <section>
             <h2 className="font-serif text-xl font-semibold mb-2">Third-party content</h2>
             <p className="text-muted-foreground">
-              When you import a recipe from a URL, the original recipe content remains the property of its publisher. Imported recipes are stored privately in your account for your personal use only.
+              Recipes and drinks in Ingredify are curated by us. Anything you save, rate, or note is stored privately in your account for your personal use only.
             </p>
           </section>
 

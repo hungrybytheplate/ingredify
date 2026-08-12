@@ -1,4 +1,1 @@
 project_id = "fdyblhbdybmacwnxtsam"
-
-[functions.parse-recipe]
-verify_jwt = true

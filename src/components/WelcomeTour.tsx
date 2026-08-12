@@ -16,7 +16,6 @@ import {
   Activity,
   Package,
   Star,
-  Link,
   Utensils,
   LucideIcon
 } from "lucide-react";
@@ -82,12 +81,6 @@ const steps: TourStep[] = [
     title: "Save & Rate Favorites",
     description: "Save recipes and drinks you love. Rate them with stars and add personal notes.",
     highlight: "Build your personal cookbook",
-  },
-  {
-    icon: Link,
-    title: "Import Recipes from the Web",
-    description: "Paste a URL from any recipe website and AI will extract the title, ingredients, instructions, and nutrition info automatically.",
-    highlight: "Works with AllRecipes, Food Network, and more",
   },
   {
     icon: Utensils,
