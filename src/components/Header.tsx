@@ -1,5 +1,6 @@
 import { HelpCircle, LogIn, LogOut, User, Settings2, Package, Shield } from "lucide-react";
-import logo from "@/assets/logo-sm.webp";
+import logoAsset from "@/assets/ingredify-mark.png.asset.json";
+const logo = logoAsset.url;
 import taglineIcon from "@/assets/tagline-icon-sm.webp";
 import { Button } from "@/components/ui/button";
 import { QuickTooltip } from "@/components/Tooltip";
