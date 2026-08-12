@@ -59,7 +59,7 @@ export function ExportMealPlanDialog({ open, onOpenChange, mealPlan, weekStart, 
 </style></head><body>`;
 
     html += `<h1>${safeTitle}</h1>`;
-    html += `<div class="subtitle">Generated from The Kitchen</div>`;
+    html += `<div class="subtitle">Generated from Ingredify</div>`;
 
     for (const day of days) {
       const meals = getMealsForDay(day);

@@ -252,8 +252,8 @@ export default function Pantry() {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="My Pantry - The Kitchen"
-        description="Save your baseline pantry, fridge, and spice ingredients so The Kitchen pre-selects them every time you look for a recipe."
+        title="My Pantry - Ingredify"
+        description="Save your baseline pantry, fridge, and spice ingredients so Ingredify pre-selects them every time you look for a recipe."
         canonicalPath="/pantry"
       />
       <PageSchema
@@ -263,12 +263,12 @@ export default function Pantry() {
           "@type": "WebPage",
           name: "My Pantry",
           description:
-            "Save your baseline pantry, fridge, and spice ingredients so The Kitchen can pre-select them every time you look for a recipe.",
+            "Save your baseline pantry, fridge, and spice ingredients so Ingredify can pre-select them every time you look for a recipe.",
           url: "https://ingredify.org/pantry",
           inLanguage: "en",
           isPartOf: {
             "@type": "WebSite",
-            name: "The Kitchen",
+            name: "Ingredify",
             url: "https://ingredify.org/",
           },
           breadcrumb: {

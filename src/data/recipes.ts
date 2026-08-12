@@ -17056,7 +17056,7 @@ export const sampleRecipes: Recipe[] = [
       "For frying: Heat 3 cups of vegetable oil (or canola/sunflower oil) in a heavy pot or deep skillet to 350°F. Fry egg rolls in batches of 3-4 for 2-3 minutes per side until golden brown and crispy.",
       "For air fryer: Preheat air fryer to 375°F. Spray egg rolls lightly with oil. Air fry for 8-10 minutes, flipping halfway, until golden and crispy.",
       "Drain fried egg rolls on a paper towel-lined plate for 2 minutes.",
-      "Serve hot with sweet chili sauce or hot mustard for dipping. (See the Sweet Chili Dipping Sauce and Hot Mustard Dipping Sauce recipes in The Kitchen!)",
+      "Serve hot with sweet chili sauce or hot mustard for dipping. (See the Sweet Chili Dipping Sauce and Hot Mustard Dipping Sauce recipes in Ingredify!)",
       "FROM-SCRATCH WRAPPERS: If you don't have store-bought egg roll wrappers, make your own. Whisk together 2 cups all-purpose flour and 1/2 tsp salt. Make a well in the center and add 1 beaten egg plus 1/2 cup cold water. Mix until a dough forms. Knead on a floured surface for 5-8 minutes until smooth and elastic. Cover with a damp towel and rest 30 minutes. Divide dough into 12 equal pieces. Roll each piece paper-thin into a 7-inch square on a well-floured surface. Dust with cornstarch between layers to prevent sticking. Use immediately or stack and wrap tightly to refrigerate up to 2 days.",
     ],
     matchedIngredients: [],

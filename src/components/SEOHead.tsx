@@ -13,7 +13,7 @@ interface SEOHeadProps {
  * for better search engine visibility and rich snippets
  */
 export function SEOHead({
-  title = "The Kitchen — Recipes From Ingredients You Have",
+  title = "Ingredify — Recipes From Ingredients You Have",
   description = "Find recipes from ingredients you already have. Free meal planner, weekly dinner ideas, and a smart shopping list — all in one app.",
   canonicalPath = "/",
   type = "website"
@@ -91,7 +91,7 @@ export function generateRecipeSchema(recipe: {
     "description": recipe.description || `Delicious ${recipe.title} recipe`,
     "author": {
       "@type": "Organization",
-      "name": "The Kitchen"
+      "name": "Ingredify"
     },
     "datePublished": "2025-01-01",
     "image": `https://ingredify.org/og-image.png`,
@@ -134,7 +134,7 @@ export function generateRecipeCollectionSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Popular Recipes on The Kitchen",
+    "name": "Popular Recipes on Ingredify",
     "description": "Top rated recipes you can make with common ingredients",
     "numberOfItems": featuredRecipes.length,
     "itemListElement": featuredRecipes.map((recipe, index) => ({
@@ -147,7 +147,7 @@ export function generateRecipeCollectionSchema() {
         "image": "https://ingredify.org/og-image.png",
         "author": {
           "@type": "Organization",
-          "name": "The Kitchen"
+          "name": "Ingredify"
         }
       }
     }))
@@ -161,13 +161,13 @@ export function generateMealPlanningGuideSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    "name": "How to Plan Your Weekly Meals with The Kitchen App",
+    "name": "How to Plan Your Weekly Meals with Ingredify App",
     "description": "Step-by-step guide to planning a week of meals using ingredients you already have at home",
     "totalTime": "PT10M",
     "tool": [
       {
         "@type": "HowToTool",
-        "name": "The Kitchen App"
+        "name": "Ingredify App"
       }
     ],
     "step": [

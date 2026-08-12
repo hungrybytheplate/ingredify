@@ -56,7 +56,7 @@ export function Header({ onShowTour }: HeaderProps) {
           >
             <img 
               src={logo} 
-              alt="The Kitchen Logo" 
+              alt="Ingredify Logo" 
               width={80}
               height={80}
               loading="eager"
@@ -67,7 +67,7 @@ export function Header({ onShowTour }: HeaderProps) {
           </motion.div>
           <div className="min-w-0 hidden sm:block">
             <h1 className="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-foreground tracking-tight truncate">
-              The Kitchen
+              Ingredify
             </h1>
             <p className="text-xs sm:text-sm text-muted-foreground font-medium">
               Fresh recipes from your ingredients

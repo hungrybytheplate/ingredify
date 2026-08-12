@@ -1,14 +1,14 @@
-# The Kitchen
+# Ingredify
 
 > Find recipes based on ingredients you already have. Plan meals, generate shopping lists, and discover cocktails, mocktails, and smoothies — all from your pantry.
 
-The Kitchen is a free meal planning and recipe discovery app. Select the ingredients you have on hand and instantly see recipes you can make right now. Save favorites, build a weekly meal calendar, auto-generate aisle-organized shopping lists, and explore drinks from cocktails to wellness tonics.
+Ingredify is a free meal planning and recipe discovery app. Select the ingredients you have on hand and instantly see recipes you can make right now. Save favorites, build a weekly meal calendar, auto-generate aisle-organized shopping lists, and explore drinks from cocktails to wellness tonics.
 
 ## Pages
 
 - [Home](/): Pick ingredients and find recipes you can make right now.
 - [Pantry](/pantry): Save your baseline ingredients for faster recipe matching.
-- [Install](/install): Install The Kitchen as an app on your phone or desktop.
+- [Install](/install): Install Ingredify as an app on your phone or desktop.
 - [Sign In](/auth): Create an account to sync saved recipes and meal plans across devices.
 - [Privacy Policy](/privacy): How user data is collected, stored, and protected.
 

@@ -2,11 +2,11 @@ import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.thekitchenhq.app',
-  appName: 'the-kitchen',
+  appName: 'Ingredify',
   webDir: 'dist',
   ios: {
     contentInset: 'always',
-    scheme: 'TheKitchen',
+    scheme: 'Ingredify',
     limitsNavigationsToAppBoundDomains: false,
     // Use 'always' to allow the WebView to scroll its content under the safe area
     // Set to false in production to prevent zoom on input focus

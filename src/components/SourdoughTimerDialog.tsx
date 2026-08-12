@@ -133,14 +133,14 @@ function generateICSEvents(steps: TimerStep[], startDate: Date): string {
   const now = format(new Date(), "yyyyMMdd'T'HHmmss");
   let ics = `BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//The Kitchen//Sourdough Timer//EN
+PRODID:-//Ingredify//Sourdough Timer//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH\n`;
 
   for (const step of steps) {
     const start = addMinutes(addHours(startDate, Math.floor(step.offsetHours)), (step.offsetHours % 1) * 60);
     const end = addMinutes(start, step.durationMin);
-    const uid = `sourdough-${step.id}-${format(startDate, "yyyyMMdd")}@thekitchen.app`;
+    const uid = `sourdough-${step.id}-${format(startDate, "yyyyMMdd")}@ingredify.org`;
     
     ics += `BEGIN:VEVENT
 UID:${uid}
