@@ -16,7 +16,6 @@ import {
   Activity,
   Package,
   Star,
-  Link,
   Utensils,
   LucideIcon
 } from "lucide-react";
