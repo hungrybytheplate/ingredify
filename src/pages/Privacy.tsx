@@ -121,7 +121,7 @@ export default function Privacy() {
           <section>
             <h2 className="font-serif text-xl font-semibold mb-2">Contact</h2>
             <p className="text-muted-foreground">
-              Questions about this policy? Reach us on Instagram <a href="https://instagram.com/thekitchen.hq" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">@thekitchen.hq</a>.
+              Questions about this policy? Reach us on Instagram <a href="https://instagram.com/ingredify.app" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">@ingredify.app</a>.
             </p>
           </section>
         </div>
