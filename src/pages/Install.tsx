@@ -55,8 +55,8 @@ export default function Install() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-accent/20 flex items-center justify-center p-4">
       <SEOHead
-        title="Install The Kitchen - Add to Home Screen"
-        description="Install The Kitchen on your phone or desktop for one-tap access to recipes, meal plans, and shopping lists — works offline."
+        title="Install Ingredify - Add to Home Screen"
+        description="Install Ingredify on your phone or desktop for one-tap access to recipes, meal plans, and shopping lists — works offline."
         canonicalPath="/install"
       />
       <Card className="w-full max-w-md shadow-lg border-border/50">
@@ -64,9 +64,9 @@ export default function Install() {
           <div className="mx-auto p-4 rounded-2xl gradient-warm shadow-warm w-fit">
             <UtensilsCrossed className="h-10 w-10 text-primary-foreground" />
           </div>
-          <CardTitle className="font-serif text-2xl">Install The Kitchen</CardTitle>
+          <CardTitle className="font-serif text-2xl">Install Ingredify</CardTitle>
           <CardDescription>
-            Add The Kitchen to your home screen for quick access and an app-like experience
+            Add Ingredify to your home screen for quick access and an app-like experience
           </CardDescription>
         </CardHeader>
 
@@ -77,7 +77,7 @@ export default function Install() {
                 <Check className="h-8 w-8 text-primary" />
               </div>
               <p className="text-muted-foreground">
-                The Kitchen is already installed on your device!
+                Ingredify is already installed on your device!
               </p>
               <Button onClick={() => navigate("/")} className="w-full">
                 Open App

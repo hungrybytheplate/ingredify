@@ -11,8 +11,8 @@ export default function Privacy() {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Privacy Policy - The Kitchen"
-        description="How The Kitchen collects, stores, and protects your data. We don't sell your data, run ads, or share with data brokers."
+        title="Privacy Policy - Ingredify"
+        description="How Ingredify collects, stores, and protects your data. We don't sell your data, run ads, or share with data brokers."
         canonicalPath="/privacy"
         type="article"
       />
@@ -23,12 +23,12 @@ export default function Privacy() {
           "@type": "WebPage",
           name: "Privacy Policy",
           description:
-            "How The Kitchen collects, stores, and protects your data. We do not sell your data, do not use it for advertising, and do not share it with data brokers.",
+            "How Ingredify collects, stores, and protects your data. We do not sell your data, do not use it for advertising, and do not share it with data brokers.",
           url: "https://ingredify.org/privacy",
           inLanguage: "en",
           isPartOf: {
             "@type": "WebSite",
-            name: "The Kitchen",
+            name: "Ingredify",
             url: "https://ingredify.org/",
           },
           dateModified: "2026-04-30",
@@ -56,7 +56,7 @@ export default function Privacy() {
           <section>
             <h2 className="font-serif text-xl font-semibold mb-2">Overview</h2>
             <p className="text-muted-foreground">
-              The Kitchen ("we", "our", "us") is a meal planning and recipe discovery app. We respect your privacy and only collect the data needed to make the app work for you. We do not sell your data, do not use it for advertising, and do not share it with data brokers.
+              Ingredify ("we", "our", "us") is a meal planning and recipe discovery app. We respect your privacy and only collect the data needed to make the app work for you. We do not sell your data, do not use it for advertising, and do not share it with data brokers.
             </p>
           </section>
 
@@ -86,7 +86,7 @@ export default function Privacy() {
           <section>
             <h2 className="font-serif text-xl font-semibold mb-2">Tracking & analytics</h2>
             <p className="text-muted-foreground">
-              The Kitchen does not include third-party advertising SDKs, cross-app tracking, or analytics that profile individual users.
+              Ingredify does not include third-party advertising SDKs, cross-app tracking, or analytics that profile individual users.
             </p>
           </section>
 
@@ -107,7 +107,7 @@ export default function Privacy() {
           <section>
             <h2 className="font-serif text-xl font-semibold mb-2">Children</h2>
             <p className="text-muted-foreground">
-              The Kitchen is not directed to children under 13 and we do not knowingly collect personal data from them.
+              Ingredify is not directed to children under 13 and we do not knowingly collect personal data from them.
             </p>
           </section>
 

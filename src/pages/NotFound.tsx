@@ -23,7 +23,7 @@ const NotFound = () => {
       >
         <motion.img 
           src={logo} 
-          alt="The Kitchen Logo" 
+          alt="Ingredify Logo" 
           className="h-24 w-24 mx-auto mb-6 rounded-2xl shadow-warm"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -35,7 +35,7 @@ const NotFound = () => {
           Recipe Not Found
         </h2>
         <p className="text-muted-foreground mb-8">
-          Looks like this dish isn't on the menu. Let's get you back to The Kitchen.
+          Looks like this dish isn't on the menu. Let's get you back to Ingredify.
         </p>
         
         <Button 
@@ -44,7 +44,7 @@ const NotFound = () => {
           className="gap-2"
         >
           <Home className="h-4 w-4" />
-          Back to The Kitchen
+          Back to Ingredify
         </Button>
       </motion.div>
     </div>

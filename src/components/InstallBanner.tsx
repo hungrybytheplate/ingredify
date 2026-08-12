@@ -83,7 +83,7 @@ export function InstallBanner() {
             </div>
             
             <div className="flex-1 min-w-0">
-              <h3 className="font-semibold text-foreground">Install The Kitchen</h3>
+              <h3 className="font-semibold text-foreground">Install Ingredify</h3>
               <p className="text-sm text-muted-foreground mt-0.5">
                 Add to your home screen for quick access
               </p>

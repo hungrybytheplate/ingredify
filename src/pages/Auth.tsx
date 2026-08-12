@@ -118,7 +118,7 @@ export default function Auth() {
     } else {
       toast({
         title: 'Account created!',
-        description: 'Welcome to The Kitchen! Your account has been created.',
+        description: 'Welcome to Ingredify! Your account has been created.',
       });
     }
   };
@@ -320,7 +320,7 @@ export default function Auth() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-primary/5 to-background flex items-center justify-center p-4">
       <SEOHead
-        title="Sign In - The Kitchen"
+        title="Sign In - Ingredify"
         description="Sign in or create a free account to sync your saved recipes, meal plans, and shopping list across devices."
         canonicalPath="/auth"
       />
@@ -329,14 +329,14 @@ export default function Auth() {
         schema={{
           "@context": "https://schema.org",
           "@type": "WebPage",
-          name: "Sign In to The Kitchen",
+          name: "Sign In to Ingredify",
           description:
             "Sign in or create a free account to sync your saved recipes, meal plans, and shopping list across devices.",
           url: "https://ingredify.org/auth",
           inLanguage: "en",
           isPartOf: {
             "@type": "WebSite",
-            name: "The Kitchen",
+            name: "Ingredify",
             url: "https://ingredify.org/",
           },
           breadcrumb: {
@@ -353,7 +353,7 @@ export default function Auth() {
           <div className="mx-auto w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center">
             <Leaf className="h-7 w-7 text-primary" />
           </div>
-          <CardTitle className="text-2xl font-display font-semibold text-foreground">The Kitchen</CardTitle>
+          <CardTitle className="text-2xl font-display font-semibold text-foreground">Ingredify</CardTitle>
           <CardDescription className="text-muted-foreground">
             Sign in to sync your recipes, meal plans, and shopping list across devices
           </CardDescription>

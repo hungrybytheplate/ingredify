@@ -17,8 +17,8 @@ export default defineConfig(({ mode }) => ({
       registerType: "autoUpdate",
       includeAssets: ["favicon.png"],
       manifest: {
-        name: "The Kitchen - Fresh Recipes",
-        short_name: "The Kitchen",
+        name: "Ingredify - Fresh Recipes",
+        short_name: "Ingredify",
         description: "Fresh recipes from your ingredients. Plan meals, save favorites, and share with family.",
         theme_color: "#4a7c59",
         background_color: "#faf8f5",

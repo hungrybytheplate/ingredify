@@ -218,7 +218,7 @@ export function MealCalendar({
       descParts.push('', `🏷️ ${recipe.dietaryTags.join(', ')}`);
     }
     
-    descParts.push('', '🔗 Made with The Kitchen');
+    descParts.push('', '🔗 Made with Ingredify');
     const fullDesc = descParts.join('\n');
     
     const mealTypeLabel = recipe.mealType.charAt(0).toUpperCase() + recipe.mealType.slice(1);
@@ -247,12 +247,12 @@ export function MealCalendar({
     // Apple Calendar / ICS
     const start = format(startDate, "yyyyMMdd'T'HHmmss");
     const end = format(endDate, "yyyyMMdd'T'HHmmss");
-    const uid = `${recipe.id}-${entry.date}@thekitchen.app`;
+    const uid = `${recipe.id}-${entry.date}@ingredify.org`;
     const now = format(new Date(), "yyyyMMdd'T'HHmmss");
     const escapedDesc = fullDesc.replace(/,/g, '\\,').replace(/\n/g, '\\n');
     const ics = `BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//The Kitchen//Meal Planner//EN
+PRODID:-//Ingredify//Meal Planner//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT

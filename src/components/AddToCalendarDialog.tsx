@@ -122,14 +122,14 @@ function generateCalendarLinks(recipe: Recipe, date: Date, mealTimes: MealTimes)
     descriptionParts.push('', `🏷️ Tags: ${recipe.dietaryTags.join(', ')}`);
   }
   
-  descriptionParts.push('', '🔗 Made with The Kitchen - ingredify.org');
+  descriptionParts.push('', '🔗 Made with Ingredify - ingredify.org');
   
   const fullDescription = descriptionParts.join('\n');
   
   const title = encodeURIComponent(`🍳 ${recipe.title} (${mealTypeLabel})`);
   const description = encodeURIComponent(fullDescription);
   const startDate = format(date, "yyyyMMdd");
-  const uid = `${recipe.id}-${startDate}@thekitchen.app`;
+  const uid = `${recipe.id}-${startDate}@ingredify.org`;
   const now = format(new Date(), "yyyyMMdd'T'HHmmss");
   
   // Calculate end time based on cook time duration
@@ -161,7 +161,7 @@ function generateCalendarLinks(recipe: Recipe, date: Date, mealTimes: MealTimes)
   const escapedDesc = fullDescription.replace(/,/g, '\\,').replace(/\n/g, '\\n');
   const icsContent = `BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//The Kitchen//Meal Planner//EN
+PRODID:-//Ingredify//Meal Planner//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT

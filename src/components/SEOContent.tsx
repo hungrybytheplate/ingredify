@@ -129,11 +129,11 @@ export function SEOContent({ mode = "cook" }: SEOContentProps = {}) {
   const faqs = mode === "drink"
     ? [
         {
-          q: "How does The Kitchen find drinks based on my ingredients?",
+          q: "How does Ingredify find drinks based on my ingredients?",
           a: "Select the spirits, mixers, juices, and garnishes you have on hand from our organized bar checklist. Our smart matching engine instantly shows cocktails, mocktails, and smoothies you can make with what you already own — Perfect Matches first.",
         },
         {
-          q: "Is The Kitchen free to use for drink recipes?",
+          q: "Is Ingredify free to use for drink recipes?",
           a: "Yes! Browsing cocktails, mocktails, smoothies, and coffee drinks is completely free. Save your favorites, build shopping lists, and plan a tasting menu with no subscription required.",
         },
         {
@@ -143,16 +143,16 @@ export function SEOContent({ mode = "cook" }: SEOContentProps = {}) {
       ]
     : [
         {
-          q: "How does The Kitchen find recipes based on my ingredients?",
+          q: "How does Ingredify find recipes based on my ingredients?",
           a: "Simply select the ingredients you have available from our organized checklist. Our smart matching algorithm instantly shows you recipes where you have most or all of the required ingredients, prioritizing \"Perfect Matches\" at the top.",
         },
         {
-          q: "Is The Kitchen free to use?",
-          a: "Yes! The Kitchen is completely free. Browse recipes, plan meals, create shopping lists, and save your favorites without any subscription or payment required.",
+          q: "Is Ingredify free to use?",
+          a: "Yes! Ingredify is completely free. Browse recipes, plan meals, create shopping lists, and save your favorites without any subscription or payment required.",
         },
         {
-          q: "Can I access The Kitchen on my phone?",
-          a: "Absolutely! The Kitchen works on any device and can be installed as an app on your phone for quick access. Use it in the kitchen while cooking with our hands-free cooking mode.",
+          q: "Can I access Ingredify on my phone?",
+          a: "Absolutely! Ingredify works on any device and can be installed as an app on your phone for quick access. Use it in the kitchen while cooking with our hands-free cooking mode.",
         },
       ];
 
