@@ -71,7 +71,7 @@ export function Header({ onShowTour }: HeaderProps) {
               Ingredify
             </h1>
             <p className="text-xs sm:text-sm text-muted-foreground font-medium">
-              Fresh recipes from your ingredients
+              See what's possible
             </p>
           </div>
         </motion.div>
