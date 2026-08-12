@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Heart, Trash2, ChefHat, ArrowRight, Search, Wine, StickyNote, ExternalLink, Star, Lightbulb, BookOpen, Sparkles, Plus, FolderPlus, Pencil, Users } from "lucide-react";
+import { Heart, Trash2, ChefHat, ArrowRight, Search, Wine, StickyNote, Star, Lightbulb, BookOpen, Sparkles, Plus, FolderPlus, Pencil, Users } from "lucide-react";
 import { sampleRecipes, Recipe } from "@/data/recipes";
 import { sampleDrinks, Drink } from "@/data/drinks";
 import { cn } from "@/lib/utils";
@@ -14,8 +14,6 @@ import { RecipeDetailDialog } from "@/components/RecipeDetailDialog";
 import { DrinkDetailDialog } from "@/components/DrinkDetailDialog";
 import { StarRating } from "@/components/StarRating";
 import { QuickTooltip } from "@/components/Tooltip";
-import { useCustomRecipes } from "@/hooks/useCustomRecipes";
-import { ImportRecipeDialog } from "@/components/ImportRecipeDialog";
 import { RecipeCollections, AddToCollectionDialog } from "@/components/RecipeCollections";
 import { useRecipeCollections } from "@/hooks/useRecipeCollections";
 import { toast } from "@/hooks/use-toast";
@@ -60,7 +58,6 @@ export function SavedRecipes({
   const [selectedDrink, setSelectedDrink] = useState<Drink | null>(null);
   const [addToCollectionRecipeId, setAddToCollectionRecipeId] = useState<string | null>(null);
   
-  const { customRecipes, deleteCustomRecipe, getRecipesAsAppFormat, refresh: refreshCustomRecipes } = useCustomRecipes();
   const {
     collections,
     selectedCollectionId,
@@ -74,16 +71,12 @@ export function SavedRecipes({
   
   const allSavedRecipes = sampleRecipes.filter((r) => savedRecipeIds.includes(r.id));
   const allSavedDrinks = sampleDrinks.filter((d) => savedDrinkIds.includes(d.id));
-  const importedRecipes = getRecipesAsAppFormat();
   
   // Apply collection filter then search filter
   const collectionFilteredIds = getFilteredRecipeIds(allSavedRecipes.map(r => r.id));
   const savedRecipes = allSavedRecipes
     .filter((r) => collectionFilteredIds.includes(r.id))
     .filter((r) => r.title.toLowerCase().includes(search.toLowerCase()));
-  const filteredImportedRecipes = importedRecipes.filter((r) =>
-    r.title.toLowerCase().includes(search.toLowerCase())
-  );
   const savedDrinks = allSavedDrinks.filter((d) =>
     d.title.toLowerCase().includes(search.toLowerCase())
   );
@@ -93,7 +86,7 @@ export function SavedRecipes({
   const favoriteDrinks = savedDrinks.filter((d) => (ratings[`drink-${d.id}`] || 0) >= 4);
   const totalFavorites = favoriteRecipes.length + favoriteDrinks.length;
 
-  const totalSaved = allSavedRecipes.length + allSavedDrinks.length + customRecipes.length;
+  const totalSaved = allSavedRecipes.length + allSavedDrinks.length;
 
   const handleRate = (itemId: string, itemType: 'recipe' | 'drink', rating: number) => {
     if (onRate) {
@@ -111,25 +104,6 @@ export function SavedRecipes({
     setSelectedRecipeForNotes({ id: recipeId, title: recipeTitle });
     setNotesDialogOpen(true);
   };
-
-  const handleDeleteCustomRecipe = async (recipeId: string) => {
-    try {
-      // Extract the actual UUID from "custom-{uuid}"
-      const actualId = recipeId.replace('custom-', '');
-      await deleteCustomRecipe(actualId);
-      toast({
-        title: "Recipe deleted",
-        description: "The imported recipe has been removed.",
-      });
-    } catch (error) {
-      toast({
-        title: "Error",
-        description: "Failed to delete the recipe.",
-        variant: "destructive",
-      });
-    }
-  };
-
 
   if (totalSaved === 0) {
     return (
@@ -215,7 +189,7 @@ export function SavedRecipes({
             Saved Collection
           </CardTitle>
           <p className="text-xs sm:text-sm text-muted-foreground mt-1">
-            {allSavedRecipes.length + customRecipes.length} recipe{(allSavedRecipes.length + customRecipes.length) === 1 ? '' : 's'} · {allSavedDrinks.length} drink{allSavedDrinks.length === 1 ? '' : 's'} · {totalFavorites} favorite{totalFavorites === 1 ? '' : 's'}
+            {allSavedRecipes.length} recipe{allSavedRecipes.length === 1 ? '' : 's'} · {allSavedDrinks.length} drink{allSavedDrinks.length === 1 ? '' : 's'} · {totalFavorites} favorite{totalFavorites === 1 ? '' : 's'}
           </p>
         </div>
       </CardHeader>
@@ -231,7 +205,7 @@ export function SavedRecipes({
         </div>
 
         <Tabs defaultValue="favorites" className="w-full">
-          <TabsList className="w-full grid grid-cols-4 h-10 bg-muted/50 p-1 rounded-lg">
+          <TabsList className="w-full grid grid-cols-3 h-10 bg-muted/50 p-1 rounded-lg">
             <TabsTrigger value="favorites" className="rounded-md data-[state=active]:bg-card data-[state=active]:shadow-sm flex items-center justify-center gap-1 text-xs sm:text-sm px-1 sm:px-2">
               <Star className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0 fill-amber-400 text-amber-400" />
               <span className="hidden sm:inline">Favorites</span>
@@ -241,11 +215,6 @@ export function SavedRecipes({
               <ChefHat className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
               <span className="hidden sm:inline">Recipes</span>
               <span className="text-xs">({savedRecipes.length})</span>
-            </TabsTrigger>
-            <TabsTrigger value="imported" className="rounded-md data-[state=active]:bg-card data-[state=active]:shadow-sm flex items-center justify-center gap-1 text-xs sm:text-sm px-1 sm:px-2">
-              <ExternalLink className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
-              <span className="hidden sm:inline">Imported</span>
-              <span className="text-xs">({filteredImportedRecipes.length})</span>
             </TabsTrigger>
             <TabsTrigger value="drinks" className="rounded-md data-[state=active]:bg-card data-[state=active]:shadow-sm flex items-center justify-center gap-1 text-xs sm:text-sm px-1 sm:px-2">
               <Wine className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
@@ -423,46 +392,6 @@ export function SavedRecipes({
               ) : (
                 <p className="text-center text-muted-foreground py-4">
                   {search ? `No recipes match "${search}"` : "No recipes saved yet"}
-                </p>
-              )}
-            </div>
-          </TabsContent>
-
-          <TabsContent value="imported" className="mt-4">
-            <div className="space-y-3">
-              <ImportRecipeDialog onImported={refreshCustomRecipes} />
-              
-              {filteredImportedRecipes.length > 0 ? (
-                filteredImportedRecipes.map((recipe) => (
-                  <div
-                    key={recipe.id}
-                    className="flex items-center justify-between p-3 rounded-xl bg-muted/30 hover:bg-muted/50 transition-colors group cursor-pointer"
-                    onClick={() => setSelectedRecipe(recipe)}
-                  >
-                    <div className="flex items-center gap-3 flex-1 min-w-0">
-                      <Badge className={cn("text-xs shrink-0", mealTypeColors[recipe.mealType] || "bg-slate-100 text-slate-800 dark:bg-slate-900/30 dark:text-slate-300")}>
-                        {recipe.mealType}
-                      </Badge>
-                      <div className="flex flex-col min-w-0">
-                        <span className="font-medium truncate">{recipe.title}</span>
-                        <span className="text-xs text-muted-foreground">Imported</span>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-1" onClick={(e) => e.stopPropagation()}>
-                      <Button
-                        variant="ghost"
-                        size="icon"
-                        onClick={() => handleDeleteCustomRecipe(recipe.id)}
-                        className="opacity-0 group-hover:opacity-100 transition-opacity text-muted-foreground hover:text-destructive"
-                      >
-                        <Trash2 className="h-4 w-4" />
-                      </Button>
-                    </div>
-                  </div>
-                ))
-              ) : (
-                <p className="text-center text-muted-foreground py-4">
-                  {search ? `No imported recipes match "${search}"` : "No imported recipes yet. Paste a URL to get started!"}
                 </p>
               )}
             </div>
