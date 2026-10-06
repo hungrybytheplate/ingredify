@@ -40,6 +40,7 @@ import { sampleRecipes } from "@/data/recipes";
 import { ShareRecipeButton } from "./ShareRecipeButton";
 import { CookingMode } from "./CookingMode";
 import { findPairingByName } from "@/lib/pairingLookup";
+import { getAltForm } from "@/lib/dipWontonPairs";
 import { DrinkDetailDialog } from "./DrinkDetailDialog";
 import { SourdoughTimerDialog } from "./SourdoughTimerDialog";
 import type { Drink } from "@/data/drinks";
@@ -553,6 +554,24 @@ export function RecipeDetailDialog({
                     </ul>
                   </Card>
                 )}
+
+                {/* Dip <-> Wonton alternate form */}
+                {(() => {
+                  const alt = getAltForm(displayedRecipe);
+                  if (!alt) return null;
+                  return (
+                    <button
+                      onClick={() => handleNavigateToRecipe(alt.recipe)}
+                      className="w-full p-3 rounded-lg bg-primary/5 border border-primary/30 text-left hover:bg-primary/10 transition-all flex items-center justify-between gap-2 min-h-[40px]"
+                    >
+                      <div>
+                        <p className="text-sm font-semibold text-primary">{alt.label}</p>
+                        <p className="text-xs text-muted-foreground">{alt.recipe.title}</p>
+                      </div>
+                      <ExternalLink className="h-4 w-4 text-primary shrink-0" />
+                    </button>
+                  );
+                })()}
 
                 {/* Suggested Pairings */}
                 {displayedRecipe.suggestedSides && displayedRecipe.suggestedSides.length > 0 && (
