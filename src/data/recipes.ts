@@ -1411,7 +1411,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Fresh salad with grilled chicken, olives, and feta",
     cookTime: "20 min",
     servings: 2,
-    ingredients: ["chicken", "lettuce", "tomato", "cucumber", "olives", "cheese", "olive-oil", "lemon", "oregano", "pepper", "salt", "chicken-breast"],
+    ingredients: ["chicken", "lettuce", "tomato", "cucumber", "olives", "cheese", "olive-oil", "lemon", "oregano", "pepper", "salt"],
   instructions: [
       "Season 2 chicken breasts with 1 teaspoon salt, ½ teaspoon pepper, and 1 teaspoon dried oregano. Let sit at room temperature for 10 minutes.",
       "Preheat a grill pan or outdoor grill to medium-high heat. Brush with olive oil. Grill chicken for 6-7 minutes per side until internal temperature reaches 165°F. Let rest 5 minutes, then slice into strips.",
@@ -1555,7 +1555,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Tender chicken with romaine and Caesar dressing in a wrap",
     cookTime: "20 min",
     servings: 2,
-    ingredients: ["chicken", "lettuce", "cheese", "flour", "garlic", "lemon", "olive-oil", "tortillas", "parmesan", "pepper", "salt", "chicken-breast", "garlic-powder"],
+    ingredients: ["chicken", "lettuce", "cheese", "flour", "garlic", "lemon", "olive-oil", "tortillas", "parmesan", "pepper", "salt", "garlic-powder"],
   instructions: [
       "Pound 2 chicken breasts to ½-inch thickness for even cooking. Season both sides generously with salt, pepper, and garlic powder. Let rest 10 minutes.",
       "Preheat grill pan over medium-high heat. Brush with olive oil. Grill chicken 5-6 minutes per side until internal temp reaches 165°F. Rest 5 minutes, then slice into ½-inch strips.",
@@ -2365,7 +2365,7 @@ export const sampleRecipes: Recipe[] = [
     description: "A warm flour tortilla wrapped around fluffy scrambled eggs, savory sausage, melted cheese, and crispy hash browns",
     cookTime: "20 min",
     servings: 2,
-    ingredients: ["eggs", "sausage-breakfast", "cheese", "flour", "potatoes", "onion", "salt", "pepper", "vegetable-oil", "flour-tortillas"],
+    ingredients: ["eggs", "sausage-breakfast", "cheese", "flour", "potatoes", "onion", "salt", "pepper", "vegetable-oil"],
     ingredientAmounts: [
       { id: "eggs", amount: "4", unit: "large" },
       { id: "sausage-breakfast", amount: "0.5", unit: "lb" },
@@ -2376,7 +2376,6 @@ export const sampleRecipes: Recipe[] = [
       { id: "salt", amount: "0.5", unit: "tsp" },
       { id: "pepper", amount: "0.25", unit: "tsp" },
       { id: "vegetable-oil", amount: "2", unit: "tbsp" },
-      { id: "flour-tortillas", amount: "as needed", unit: "" },
     ],
     keyIngredients: ["eggs", "sausage-breakfast", "cheese"],
     instructions: [
@@ -2409,7 +2408,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Juicy pan-seared chicken in a rich garlic butter sauce",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["chicken", "butter", "garlic", "thyme", "lemon", "salt", "pepper", "chicken-thighs"],
+    ingredients: ["chicken", "butter", "garlic", "thyme", "lemon", "salt", "pepper"],
   instructions: [
       "Pat 4 chicken thighs or breasts completely dry with paper towels—this is essential for browning. Season generously on both sides with 1 teaspoon salt, ½ teaspoon pepper, and 1 teaspoon dried thyme.",
       "Heat a large heavy skillet (cast iron is ideal) over medium-high heat. Add 2 tablespoons butter. When it foams and the foam subsides, the pan is ready.",
@@ -2496,7 +2495,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Seasoned fish with fresh slaw in warm tortillas",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["fish", "flour", "lettuce", "tomato", "lime", "cumin", "chili-powder", "sour-cream", "vegetable-oil", "cabbage", "tilapia", "pepper", "salt", "corn", "cod", "flour-tortillas"],
+    ingredients: ["fish", "flour", "lettuce", "tomato", "lime", "cumin", "chili-powder", "sour-cream", "vegetable-oil", "cabbage", "tilapia", "pepper", "salt", "corn", "cod"],
   instructions: [
       "Cut 1 lb white fish (cod, tilapia, or mahi-mahi) into 2-inch pieces. Season generously with 1 teaspoon cumin, 1 teaspoon chili powder, ½ teaspoon salt, and ¼ teaspoon pepper.",
       "Place ½ cup flour in a shallow bowl. Dredge each fish piece in flour, shaking off excess. The coating should be light.",
@@ -2554,7 +2553,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Aromatic curry with tender chicken and coconut milk",
     cookTime: "35 min",
     servings: 4,
-    ingredients: ["chicken", "coconut-milk", "onion", "garlic", "ginger", "curry-powder", "tomatoes", "rice", "oil", "chicken-thighs"],
+    ingredients: ["chicken", "coconut-milk", "onion", "garlic", "ginger", "curry-powder", "tomatoes", "rice", "oil"],
   instructions: [
       "Dice 1 large onion. Mince 4 garlic cloves and 1 inch of fresh ginger (or use 1 teaspoon ground ginger). Cut 1½ lbs chicken thighs into 2-inch pieces.",
       "Heat 2 tablespoons oil in a large deep pan or Dutch oven over medium heat. Sauté onion for 5 minutes until softened and translucent.",
@@ -2732,7 +2731,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Glazed chicken with steamed rice and vegetables",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["chicken", "rice", "soy-sauce", "honey", "garlic", "ginger", "broccoli", "carrot", "teriyaki-sauce", "salt", "oil", "chicken-thighs"],
+    ingredients: ["chicken", "rice", "soy-sauce", "honey", "garlic", "ginger", "broccoli", "carrot", "teriyaki-sauce", "salt", "oil"],
     instructions: [
       "Cook 2 cups jasmine rice according to package. Fluff with fork and keep warm. Cut 1½ lbs chicken thighs into 2-inch pieces.",
       "Make teriyaki sauce: In a small saucepan, whisk ½ cup soy sauce, ¼ cup honey, 3 minced garlic cloves, 1 tablespoon grated ginger, and 2 tablespoons water. Simmer 5 minutes until slightly thickened. Reserve half for serving.",
@@ -2905,7 +2904,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Crispy chicken thighs glazed with sweet honey garlic sauce",
     cookTime: "35 min",
     servings: 4,
-    ingredients: ["chicken", "honey", "garlic", "soy-sauce", "butter", "thyme", "salt", "pepper", "chicken-thighs"],
+    ingredients: ["chicken", "honey", "garlic", "soy-sauce", "butter", "thyme", "salt", "pepper"],
     instructions: [
       "Pat 4 bone-in, skin-on chicken thighs very dry with paper towels—this is crucial for crispy skin. Season both sides generously with 1 teaspoon salt and ½ teaspoon pepper.",
       "Place thighs skin-side down in a cold large skillet. Turn heat to medium. Cook without moving for 12-15 minutes. The fat will render slowly and skin will become deeply golden and crispy.",
@@ -3033,7 +3032,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Pan-seared chicken cutlets in a bright lemon-caper butter sauce",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["chicken", "flour", "butter", "lemon", "capers", "garlic", "parsley", "salt", "pepper", "olive-oil", "chicken-breast"],
+    ingredients: ["chicken", "flour", "butter", "lemon", "capers", "garlic", "parsley", "salt", "pepper", "olive-oil"],
     ingredientAmounts: [
       { id: "chicken", amount: "4", unit: "breasts" },
       { id: "flour", amount: "0.5", unit: "cup" },
@@ -3045,7 +3044,6 @@ export const sampleRecipes: Recipe[] = [
       { id: "salt", amount: "1", unit: "tsp" },
       { id: "pepper", amount: "0.5", unit: "tsp" },
       { id: "olive-oil", amount: "3", unit: "tbsp" },
-      { id: "chicken-breast", amount: "4", unit: "" },
     ],
     instructions: [
       "Place 4 chicken breasts between plastic wrap. Using a meat mallet or rolling pin, pound to an even ½-inch thickness. This ensures even cooking. Season both sides with salt and pepper.",
@@ -3079,7 +3077,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Tender chicken in a rich mushroom Marsala wine sauce",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["chicken", "mushroom", "flour", "butter", "garlic", "parsley", "salt", "pepper", "olive-oil", "marsala-wine", "chicken-breast", "chicken-broth"],
+    ingredients: ["chicken", "mushroom", "flour", "butter", "garlic", "parsley", "salt", "pepper", "olive-oil", "marsala-wine", "chicken-broth"],
     ingredientAmounts: [
       { id: "chicken", amount: "4", unit: "breasts" },
       { id: "mushroom", amount: "8", unit: "oz" },
@@ -3091,7 +3089,6 @@ export const sampleRecipes: Recipe[] = [
       { id: "pepper", amount: "0.5", unit: "tsp" },
       { id: "olive-oil", amount: "3", unit: "tbsp" },
       { id: "marsala-wine", amount: "as needed", unit: "" },
-      { id: "chicken-breast", amount: "4", unit: "" },
       { id: "chicken-broth", amount: "0.5", unit: "cup" },
     ],
     instructions: [
@@ -3126,7 +3123,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Crispy breaded chicken topped with marinara and melted mozzarella",
     cookTime: "35 min",
     servings: 4,
-    ingredients: ["chicken", "bread-crumbs", "parmesan", "mozzarella", "eggs", "tomato-sauce", "garlic", "basil", "olive-oil", "marinara-sauce", "breadcrumbs", "flour", "chicken-breast"],
+    ingredients: ["chicken", "bread-crumbs", "parmesan", "mozzarella", "eggs", "tomato-sauce", "garlic", "basil", "olive-oil", "marinara-sauce", "breadcrumbs", "flour"],
     ingredientAmounts: [
       { id: "chicken", amount: "4", unit: "breasts" },
       { id: "bread-crumbs", amount: "1", unit: "cup" },
@@ -3140,7 +3137,6 @@ export const sampleRecipes: Recipe[] = [
       { id: "marinara-sauce", amount: "as needed", unit: "" },
       { id: "breadcrumbs", amount: "1", unit: "cup" },
       { id: "flour", amount: "as needed", unit: "" },
-      { id: "chicken-breast", amount: "4", unit: "" },
     ],
     instructions: [
       "Preheat oven to 425°F (220°C). Pound 4 chicken breasts to ½-inch thickness between plastic wrap. Set up a breading station: flour in one dish, 2 beaten eggs in another, and a mixture of 1 cup breadcrumbs + ½ cup grated Parmesan in a third.",
@@ -3255,7 +3251,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Rolled tortillas filled with seasoned chicken and smothered in enchilada sauce",
     cookTime: "40 min",
     servings: 6,
-    ingredients: ["chicken", "tortillas", "cheese", "onion", "garlic", "cumin", "tomato-sauce", "sour-cream", "cilantro", "enchilada-sauce", "salt", "chicken-breast", "garlic-powder"],
+    ingredients: ["chicken", "tortillas", "cheese", "onion", "garlic", "cumin", "tomato-sauce", "sour-cream", "cilantro", "enchilada-sauce", "salt", "garlic-powder"],
     instructions: [
       "Preheat oven to 375°F (190°C). Poach 1½ lbs chicken breasts in simmering salted water for 18-20 minutes until cooked through. Let cool slightly, then shred with two forks into bite-sized pieces.",
       "Mix shredded chicken with 1 cup shredded cheese, 1 teaspoon cumin, ½ teaspoon garlic powder, and salt to taste. This is your filling.",
@@ -3308,7 +3304,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Deconstructed burrito with rice, beans, and fresh toppings",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["chicken", "rice", "beans", "corn", "tomato", "avocado", "lettuce", "cheese", "lime", "cilantro", "chili-powder", "pepper", "cumin", "salt", "chicken-breast"],
+    ingredients: ["chicken", "rice", "beans", "corn", "tomato", "avocado", "lettuce", "cheese", "lime", "cilantro", "chili-powder", "pepper", "cumin", "salt"],
     instructions: [
       "Cook 1½ cups long-grain rice according to package. Fluff with fork and stir in juice of 1 lime and ¼ cup chopped cilantro. Cover to keep warm.",
       "Season 1½ lbs chicken breast with 1 teaspoon cumin, 1 teaspoon chili powder, salt, and pepper. Grill over medium-high heat 6-7 minutes per side until internal temp reaches 165°F. Let rest 5 minutes, then slice into strips.",
@@ -3331,7 +3327,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Crispy tortilla filled with melted cheese and seasoned chicken",
     cookTime: "15 min",
     servings: 2,
-    ingredients: ["chicken", "tortillas", "cheese", "bell-pepper", "onion", "cumin", "sour-cream", "salsa", "flour", "salt", "oil", "chicken-breast"],
+    ingredients: ["chicken", "tortillas", "cheese", "bell-pepper", "onion", "cumin", "sour-cream", "salsa", "flour", "salt", "oil"],
     instructions: [
       "Season 8 oz chicken breast with ½ teaspoon cumin, salt, and pepper. Cook in an oiled skillet over medium-high heat for 6-7 minutes per side until internal temp reaches 165°F. Let rest 5 minutes, then slice into thin strips.",
       "In the same pan, add 1 tablespoon oil. Sauté ½ sliced bell pepper and ¼ sliced onion over medium-high heat for 4-5 minutes until slightly charred and tender. Season with salt.",
@@ -3410,7 +3406,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Spicy Sichuan chicken with peanuts and dried chilies",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["chicken", "peanuts", "garlic", "ginger", "soy-sauce", "green-onion", "vegetable-oil", "rice", "red-pepper-flakes", "sesame-oil", "cornstarch", "sugar", "chicken-thighs", "rice-vinegar"],
+    ingredients: ["chicken", "peanuts", "garlic", "ginger", "soy-sauce", "green-onion", "vegetable-oil", "rice", "red-pepper-flakes", "sesame-oil", "cornstarch", "sugar", "rice-vinegar"],
     instructions: [
       "Cut 1½ lbs boneless chicken thighs into 1-inch cubes. Marinate in 2 tablespoons soy sauce, 1 tablespoon rice wine (or dry sherry), and 1 teaspoon cornstarch for 15 minutes.",
       "Make the sauce: Whisk 2 tablespoons soy sauce, 1 tablespoon rice vinegar, 2 teaspoons sugar, 1 teaspoon sesame oil, and 1 tablespoon cornstarch with 3 tablespoons water. Set aside.",
@@ -3437,7 +3433,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Crispy fried chicken in sweet and tangy orange sauce",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["chicken", "orange", "garlic", "ginger", "soy-sauce", "flour", "eggs", "vegetable-oil", "rice", "cornstarch", "sugar", "salt", "chicken-thighs", "rice-vinegar"],
+    ingredients: ["chicken", "orange", "garlic", "ginger", "soy-sauce", "flour", "eggs", "vegetable-oil", "rice", "cornstarch", "sugar", "salt", "rice-vinegar"],
     instructions: [
       "Cut 1½ lbs boneless chicken thighs into 1½-inch pieces. Season with ½ teaspoon salt. Set up breading: ½ cup flour in one bowl, 2 beaten eggs in another, ½ cup cornstarch in a third.",
       "Dredge chicken pieces in flour, dip in egg, then coat in cornstarch. Shake off excess. Let sit on a wire rack for 5 minutes (this helps coating adhere).",
@@ -3463,7 +3459,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Sweet and spicy crispy chicken with broccoli",
     cookTime: "35 min",
     servings: 4,
-    ingredients: ["chicken", "broccoli", "garlic", "ginger", "soy-sauce", "flour", "eggs", "vegetable-oil", "rice", "sesame-oil", "cornstarch", "sugar", "salt", "chicken-thighs", "chicken-broth", "rice-vinegar"],
+    ingredients: ["chicken", "broccoli", "garlic", "ginger", "soy-sauce", "flour", "eggs", "vegetable-oil", "rice", "sesame-oil", "cornstarch", "sugar", "salt", "chicken-broth", "rice-vinegar"],
     instructions: [
       "Cut 1½ lbs chicken thighs into 1½-inch pieces. Whisk 2 eggs with ½ teaspoon salt. Add chicken and toss to coat. Dredge in ½ cup flour mixed with ½ cup cornstarch.",
       "Heat 2 inches vegetable oil to 350°F. Fry chicken in batches 4-5 minutes until golden and crispy. Drain on paper towels. Cut 3 cups broccoli into florets and steam 4 minutes until bright green.",
@@ -3489,7 +3485,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Aromatic coconut curry with chicken and vegetables",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["chicken", "coconut", "bell-pepper", "zucchini", "basil", "garlic", "ginger", "rice", "fish-sauce", "salt", "oil", "chicken-thighs", "chicken-broth", "coconut-milk"],
+    ingredients: ["chicken", "coconut", "bell-pepper", "zucchini", "basil", "garlic", "ginger", "rice", "fish-sauce", "salt", "oil", "chicken-broth", "coconut-milk"],
     instructions: [
       "Cook 1½ cups jasmine rice according to package. Keep warm. Cut 1 lb chicken thighs into bite-sized pieces. Slice 1 bell pepper and 1 small zucchini into thin strips.",
       "Heat 1 tablespoon oil in a wok or large pan over medium-high heat. Add 2-3 tablespoons green curry paste (adjust to taste), 2 minced garlic cloves, and 1 tablespoon minced ginger. Stir 1 minute until fragrant.",
@@ -3516,7 +3512,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Japanese-style breaded and fried chicken cutlet",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["chicken", "bread-crumbs", "eggs", "flour", "cabbage", "rice", "vegetable-oil", "panko-breadcrumbs", "pepper", "salt", "chicken-breast", "rice-vinegar"],
+    ingredients: ["chicken", "bread-crumbs", "eggs", "flour", "cabbage", "rice", "vegetable-oil", "panko-breadcrumbs", "pepper", "salt", "rice-vinegar"],
     instructions: [
       "Place 4 chicken breasts between plastic wrap. Pound to an even ½-inch thickness. Season both sides with salt and pepper.",
       "Set up breading station: ½ cup flour in one dish, 2 beaten eggs in another, 1 cup panko breadcrumbs in a third. Dredge chicken in flour (shake off excess), dip in egg (let excess drip), then press firmly into panko on both sides.",
@@ -3696,7 +3692,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Creamy chicken and vegetable filling under flaky crust",
     cookTime: "50 min",
     servings: 6,
-    ingredients: ["chicken", "carrot", "peas", "potato", "onion", "butter", "flour", "milk", "chicken-broth", "puff-pastry", "pepper", "celery", "thyme", "salt", "egg", "chicken-breast"],
+    ingredients: ["chicken", "carrot", "peas", "potato", "onion", "butter", "flour", "milk", "chicken-broth", "puff-pastry", "pepper", "celery", "thyme", "salt", "egg"],
     instructions: [
       "Preheat oven to 400°F (200°C). Poach 1½ lbs chicken breast in simmering salted water for 18-20 minutes. Let cool slightly, then dice into ½-inch cubes.",
       "Dice 2 carrots, 2 stalks celery, and 1 small potato into ½-inch pieces. Dice 1 onion. In a large pot, melt 4 tablespoons butter over medium heat. Add vegetables and cook 8-10 minutes until softened.",
@@ -3736,7 +3732,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Low-carb bowl with cauliflower rice and fresh vegetables",
     cookTime: "20 min",
     servings: 2,
-    ingredients: ["cauliflower", "chicken", "avocado", "tomato", "cucumber", "lime", "cilantro", "olive-oil", "chili-powder", "pepper", "cumin", "salt", "chicken-breast"],
+    ingredients: ["cauliflower", "chicken", "avocado", "tomato", "cucumber", "lime", "cilantro", "olive-oil", "chili-powder", "pepper", "cumin", "salt"],
     instructions: [
       "Cut 1 medium head cauliflower into florets. Working in batches, pulse in food processor until it resembles rice grains—don't over-process or it becomes mushy. You should get about 4 cups.",
       "Season 8 oz chicken breast with 1 teaspoon cumin, ½ teaspoon chili powder, salt, and pepper. Grill or pan-sear over medium-high heat 6-7 minutes per side until internal temp reaches 165°F. Let rest 5 minutes, then slice.",
@@ -3897,7 +3893,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Tender chicken cutlets in a rich Marsala wine and mushroom sauce",
     cookTime: "40 min",
     servings: 4,
-    ingredients: ["chicken", "marsala-wine", "mushroom", "butter", "flour", "garlic", "shallots", "cream", "parsley", "olive-oil", "pepper", "salt", "chicken-breast", "chicken-broth"],
+    ingredients: ["chicken", "marsala-wine", "mushroom", "butter", "flour", "garlic", "shallots", "cream", "parsley", "olive-oil", "pepper", "salt", "chicken-broth"],
     instructions: [
       "Pound 4 chicken breasts between plastic wrap to ½-inch thickness. Season both sides with salt and pepper. Dredge in flour, shaking off excess.",
       "Heat 2 tablespoons each butter and olive oil in a large skillet over medium-high heat. Cook chicken 3-4 minutes per side until golden and cooked through. Transfer to plate.",
@@ -4041,7 +4037,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Classic chicken and vegetable filling under a flaky crust",
     cookTime: "1 hour 30 min",
     servings: 6,
-    ingredients: ["chicken", "butter", "flour", "onion", "carrot", "celery", "peas", "cream", "chicken-broth", "thyme", "puff-pastry", "pepper", "salt", "egg", "chicken-breast"],
+    ingredients: ["chicken", "butter", "flour", "onion", "carrot", "celery", "peas", "cream", "chicken-broth", "thyme", "puff-pastry", "pepper", "salt", "egg"],
     instructions: [
       "Poach 1½ lbs chicken breasts in salted water 20 minutes. Let cool, then shred into bite-sized pieces.",
       "Melt 5 tablespoons butter in a large pot over medium heat. Add 1 diced onion, 2 diced carrots, 2 diced celery stalks. Cook 8 minutes until soft.",
@@ -4334,7 +4330,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Flaky pastry filled with creamy chicken and vegetables",
     cookTime: "1 hour",
     servings: 6,
-    ingredients: ["chicken", "pie-crust", "potato", "carrot", "peas", "onion", "celery", "cream", "butter", "flour", "chicken-broth", "egg", "chicken-breast"],
+    ingredients: ["chicken", "pie-crust", "potato", "carrot", "peas", "onion", "celery", "cream", "butter", "flour", "chicken-broth", "egg"],
     instructions: [
       "Poach 1.5 lbs chicken breast in salted water, shred when cool.",
       "Make filling: Sauté 1 diced onion, 2 diced carrots, 2 celery stalks in 4 tablespoons butter.",
@@ -4376,7 +4372,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Mixed greens with juicy grilled chicken and balsamic vinaigrette",
     cookTime: "25 min",
     servings: 2,
-    ingredients: ["chicken", "lettuce", "tomato", "cucumber", "avocado", "red-onion", "olive-oil", "balsamic", "mixed-greens", "pepper", "salt", "chicken-breast"],
+    ingredients: ["chicken", "lettuce", "tomato", "cucumber", "avocado", "red-onion", "olive-oil", "balsamic", "mixed-greens", "pepper", "salt"],
     instructions: [
       "Season 2 chicken breasts with salt, pepper, and olive oil. Grill 6-7 minutes per side.",
       "Rest chicken 5 minutes, then slice.",
@@ -4678,7 +4674,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Comforting homemade soup with tender chicken and vegetables",
     cookTime: "45 min",
     servings: 8,
-    ingredients: ["chicken", "egg-noodles", "carrot", "celery", "onion", "garlic", "chicken-broth", "thyme", "bay-leaves", "parsley", "olive-oil", "pepper", "salt", "chicken-breast"],
+    ingredients: ["chicken", "egg-noodles", "carrot", "celery", "onion", "garlic", "chicken-broth", "thyme", "bay-leaves", "parsley", "olive-oil", "pepper", "salt"],
     instructions: [
       "In large pot, sauté 1 diced onion, 3 carrots, and 4 celery stalks in 2 tablespoons olive oil until softened, 5-6 minutes.",
       "Add 4 minced garlic cloves, cook 1 minute until fragrant.",
@@ -7080,7 +7076,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Tender chicken in garlic butter wine sauce over pasta",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["chicken", "pasta", "garlic", "butter", "lemon", "parsley", "olive-oil", "pepper", "white-wine", "salt", "chicken-breast"],
+    ingredients: ["chicken", "pasta", "garlic", "butter", "lemon", "parsley", "olive-oil", "pepper", "white-wine", "salt"],
     ingredientAmounts: [
       { id: "chicken", amount: "1.5", unit: "lbs breast, sliced" },
       { id: "pasta", amount: "12", unit: "oz linguine" },
@@ -7091,7 +7087,6 @@ export const sampleRecipes: Recipe[] = [
       { id: "olive-oil", amount: "2", unit: "tbsp" },
       { id: "white-wine", amount: "0.5", unit: "cup" },
       { id: "salt", amount: "to taste", unit: "" },
-      { id: "chicken-breast", amount: "1.5", unit: "lbs" },
     ],
     instructions: [
       "Bring a large pot of salted water to boil. Cook 12 oz linguine until al dente. Reserve 1 cup pasta water before draining.",
@@ -7153,7 +7148,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Italian classic with chicken, prosciutto, and sage in white wine sauce",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["chicken", "prosciutto", "sage", "butter", "olive-oil", "white-wine", "flour", "salt", "pepper", "chicken-breast"],
+    ingredients: ["chicken", "prosciutto", "sage", "butter", "olive-oil", "white-wine", "flour", "salt", "pepper"],
     ingredientAmounts: [
       { id: "chicken", amount: "4", unit: "boneless breasts" },
       { id: "prosciutto", amount: "8", unit: "thin slices" },
@@ -7162,7 +7157,6 @@ export const sampleRecipes: Recipe[] = [
       { id: "olive-oil", amount: "2", unit: "tbsp" },
       { id: "white-wine", amount: "0.75", unit: "cup" },
       { id: "flour", amount: "0.5", unit: "cup" },
-      { id: "chicken-breast", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Slice each chicken breast in half horizontally to create 8 thin cutlets. Pound to ¼-inch thickness.",
@@ -7255,11 +7249,10 @@ export const sampleRecipes: Recipe[] = [
     description: "Juicy chicken breast baked in zesty Italian dressing - just 2 ingredients!",
     cookTime: "35 min",
     servings: 4,
-    ingredients: ["chicken", "italian-dressing", "chicken-breast"],
+    ingredients: ["chicken", "italian-dressing"],
     ingredientAmounts: [
       { id: "chicken", amount: "4", unit: "breasts" },
       { id: "italian-dressing", amount: "1", unit: "cup" },
-      { id: "chicken-breast", amount: "4", unit: "" },
     ],
     instructions: [
       "Preheat your oven to 375°F (190°C). Lightly grease a 9x13 baking dish.",
@@ -7384,14 +7377,13 @@ export const sampleRecipes: Recipe[] = [
     description: "No-mess BBQ chicken with corn and potatoes in foil",
     cookTime: "40 min",
     servings: 4,
-    ingredients: ["chicken", "bbq-sauce", "corn-on-cob", "russet-potato", "butter", "salt", "pepper", "chicken-breast"],
+    ingredients: ["chicken", "bbq-sauce", "corn-on-cob", "russet-potato", "butter", "salt", "pepper"],
     ingredientAmounts: [
       { id: "chicken", amount: "4", unit: "breasts" },
       { id: "bbq-sauce", amount: "1", unit: "cup" },
       { id: "corn-on-cob", amount: "2", unit: "ears, halved" },
       { id: "russet-potato", amount: "1", unit: "lb, sliced thin" },
       { id: "butter", amount: "4", unit: "tbsp" },
-      { id: "chicken-breast", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Preheat oven to 400°F (200°C) or prepare grill for medium-high heat.",
@@ -7453,7 +7445,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Zesty green salsa chicken - just dump and bake!",
     cookTime: "40 min",
     servings: 4,
-    ingredients: ["chicken", "salsa", "cheese", "cumin-ground", "lime", "pepper", "salt", "chicken-breast"],
+    ingredients: ["chicken", "salsa", "cheese", "cumin-ground", "lime", "pepper", "salt"],
     ingredientAmounts: [
       { id: "chicken", amount: "4", unit: "breasts" },
       { id: "salsa", amount: "2", unit: "cups salsa verde" },
@@ -7462,7 +7454,6 @@ export const sampleRecipes: Recipe[] = [
       { id: "lime", amount: "1", unit: "juiced" },
       { id: "pepper", amount: "to taste", unit: "" },
       { id: "salt", amount: "to taste", unit: "" },
-      { id: "chicken-breast", amount: "4", unit: "" },
     ],
     instructions: [
       "Preheat oven to 375°F (190°C). Spray a 9x13 baking dish.",
@@ -7486,14 +7477,13 @@ export const sampleRecipes: Recipe[] = [
     description: "Sticky sweet and garlicky baked chicken thighs",
     cookTime: "45 min",
     servings: 4,
-    ingredients: ["chicken", "honey", "soy-sauce", "garlic", "olive-oil", "red-pepper-flakes", "chicken-thighs"],
+    ingredients: ["chicken", "honey", "soy-sauce", "garlic", "olive-oil", "red-pepper-flakes"],
     ingredientAmounts: [
       { id: "chicken", amount: "8", unit: "bone-in thighs" },
       { id: "honey", amount: "0.33", unit: "cup" },
       { id: "soy-sauce", amount: "0.25", unit: "cup" },
       { id: "garlic", amount: "6", unit: "cloves minced" },
       { id: "olive-oil", amount: "2", unit: "tbsp" },
-      { id: "chicken-thighs", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Preheat oven to 400°F (200°C).",
@@ -8860,7 +8850,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Pan-seared chicken in a rich sun-dried tomato and spinach cream sauce",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["chicken", "sun-dried-tomatoes", "spinach", "cream", "parmesan", "garlic", "Italian-seasoning", "olive-oil", "italian-seasoning", "pepper", "salt", "chicken-breast"],
+    ingredients: ["chicken", "sun-dried-tomatoes", "spinach", "cream", "parmesan", "garlic", "Italian-seasoning", "olive-oil", "italian-seasoning", "pepper", "salt"],
     ingredientAmounts: [
       { id: "chicken", amount: "4", unit: "breasts, pounded thin" },
       { id: "sun-dried-tomatoes", amount: "0.5", unit: "cup, chopped" },
@@ -8871,7 +8861,6 @@ export const sampleRecipes: Recipe[] = [
       { id: "italian-seasoning", amount: "as needed", unit: "" },
       { id: "pepper", amount: "to taste", unit: "" },
       { id: "salt", amount: "to taste", unit: "" },
-      { id: "chicken-breast", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Season chicken breasts with Italian seasoning, salt, and pepper on both sides.",
