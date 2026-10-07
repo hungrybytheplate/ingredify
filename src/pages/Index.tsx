@@ -394,7 +394,10 @@ const Index = () => {
   const [shoppingDialogIngredient, setShoppingDialogIngredient] = useState<string | null>(null);
   const [hasSeenTour, setHasSeenTour] = useLocalStorage<boolean>("hasSeenTour", false);
   const [showTour, setShowTour] = useState(false);
-  const [activeTab, setActiveTab] = useState("ingredients");
+  const [activeTab, setActiveTab] = useState(() => {
+    const tab = searchParams.get("tab");
+    return tab && ["ingredients", "saved", "calendar", "shopping"].includes(tab) ? tab : "ingredients";
+  });
   const [showShortcutsHelp, setShowShortcutsHelp] = useState(false);
 
   useEffect(() => {
