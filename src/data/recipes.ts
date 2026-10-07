@@ -277,7 +277,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Golden brown French toast with cinnamon and vanilla",
     cookTime: "15 min",
     servings: 2,
-    ingredients: ["bread", "eggs", "milk", "butter", "cinnamon", "vanilla", "maple-syrup"],
+    ingredients: ["bread", "eggs", "milk", "butter", "cinnamon", "vanilla", "maple-syrup", "vanilla-extract"],
     ingredientAmounts: [
       { id: "bread", amount: "4", unit: "slices" },
       { id: "eggs", amount: "2", unit: "large" },
@@ -286,6 +286,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "cinnamon", amount: "1", unit: "tsp" },
       { id: "vanilla", amount: "0.5", unit: "tsp" },
       { id: "maple-syrup", amount: "2", unit: "tbsp" },
+      { id: "vanilla-extract", amount: "0.5", unit: "teaspoon" },
     ],
   instructions: [
       "In a wide, shallow bowl or baking dish, whisk together 2 eggs, ½ cup milk, 1 teaspoon cinnamon, and ½ teaspoon vanilla extract until completely combined.",
@@ -354,7 +355,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Scrambled eggs with beans, cheese, and salsa wrapped in a tortilla",
     cookTime: "20 min",
     servings: 2,
-    ingredients: ["eggs", "beans", "cheese", "onion", "bell-pepper", "flour", "salt", "hot-sauce", "tortillas", "oil"],
+    ingredients: ["eggs", "beans", "cheese", "onion", "bell-pepper", "flour", "salt", "hot-sauce", "tortillas", "oil", "flour-tortillas"],
   instructions: [
       "Crack 4 eggs into a bowl, add ½ teaspoon salt. Whisk until combined. Cook in a buttered pan over medium-low heat, stirring gently, until soft curds form (about 3 minutes). Set aside.",
       "In a small saucepan, heat 1 cup of beans over medium heat. Stir occasionally until warmed through, about 3-4 minutes. Keep warm.",
@@ -687,7 +688,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Layered salad with dressing on the bottom that stays fresh for 5 days",
     cookTime: "15 min",
     servings: 4,
-    ingredients: ["olive-oil", "lemon", "oregano", "garlic", "cucumber", "tomato-cherry", "red-onion", "feta", "olives-kalamata", "lettuce-romaine", "chickpeas", "tomatoes", "pepper", "salt"],
+    ingredients: ["olive-oil", "lemon", "oregano", "garlic", "cucumber", "tomato-cherry", "red-onion", "feta", "olives-kalamata", "lettuce-romaine", "chickpeas", "tomatoes", "pepper", "salt", "feta-cheese"],
     ingredientAmounts: [
       { id: "olive-oil", amount: "0.25", unit: "cup" },
       { id: "lemon", amount: "2", unit: "juiced" },
@@ -703,6 +704,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "tomatoes", amount: "as needed", unit: "" },
       { id: "pepper", amount: "to taste", unit: "" },
       { id: "salt", amount: "to taste", unit: "" },
+      { id: "feta-cheese", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Make dressing: Whisk olive oil, lemon juice, oregano, and minced garlic in a small bowl. Season with salt and pepper.",
@@ -1414,7 +1416,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Fresh salad with grilled chicken, olives, and feta",
     cookTime: "20 min",
     servings: 2,
-    ingredients: ["chicken", "lettuce", "tomato", "cucumber", "olives", "cheese", "olive-oil", "lemon", "oregano", "pepper", "salt"],
+    ingredients: ["chicken", "lettuce", "tomato", "cucumber", "olives", "cheese", "olive-oil", "lemon", "oregano", "pepper", "salt", "chicken-breast", "tomatoes"],
   instructions: [
       "Season 2 chicken breasts with 1 teaspoon salt, ½ teaspoon pepper, and 1 teaspoon dried oregano. Let sit at room temperature for 10 minutes.",
       "Preheat a grill pan or outdoor grill to medium-high heat. Brush with olive oil. Grill chicken for 6-7 minutes per side until internal temperature reaches 165°F. Let rest 5 minutes, then slice into strips.",
@@ -1446,7 +1448,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Light pasta tossed with fresh seasonal vegetables",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["pasta", "bell-pepper", "zucchini", "tomato", "garlic", "olive-oil", "basil", "cheese", "parmesan"],
+    ingredients: ["pasta", "bell-pepper", "zucchini", "tomato", "garlic", "olive-oil", "basil", "cheese", "parmesan", "tomatoes"],
   instructions: [
       "Bring a large pot of salted water to a rolling boil. Add 12 oz pasta and cook according to package directions until al dente (usually 8-10 minutes). Reserve 1 cup pasta water before draining.",
       "While pasta cooks, slice 1 bell pepper, 1 zucchini, and 2 tomatoes into thin strips. Mince 3 cloves of garlic.",
@@ -1473,7 +1475,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Creamy tuna salad on toasted bread with fresh vegetables",
     cookTime: "10 min",
     servings: 2,
-    ingredients: ["tuna", "bread", "lettuce", "tomato", "onion", "sour-cream", "mustard", "mayonnaise", "pepper", "salt"],
+    ingredients: ["tuna", "bread", "lettuce", "tomato", "onion", "sour-cream", "mustard", "mayonnaise", "pepper", "salt", "tomatoes"],
   instructions: [
       "Open 2 cans of tuna and drain well, pressing with a fork to remove excess liquid. Transfer to a medium bowl and flake with a fork.",
       "Add 3 tablespoons of sour cream (or mayonnaise) and 1 tablespoon of mustard to the tuna. Mix until creamy and well combined.",
@@ -1558,7 +1560,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Tender chicken with romaine and Caesar dressing in a wrap",
     cookTime: "20 min",
     servings: 2,
-    ingredients: ["chicken", "lettuce", "cheese", "flour", "garlic", "lemon", "olive-oil", "tortillas", "parmesan", "pepper", "salt"],
+    ingredients: ["chicken", "lettuce", "cheese", "flour", "garlic", "lemon", "olive-oil", "tortillas", "parmesan", "pepper", "salt", "flour-tortillas", "chicken-breast", "garlic-powder"],
   instructions: [
       "Pound 2 chicken breasts to ½-inch thickness for even cooking. Season both sides generously with salt, pepper, and garlic powder. Let rest 10 minutes.",
       "Preheat grill pan over medium-high heat. Brush with olive oil. Grill chicken 5-6 minutes per side until internal temp reaches 165°F. Rest 5 minutes, then slice into ½-inch strips.",
@@ -1584,7 +1586,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Protein-packed quinoa with vegetables and feta",
     cookTime: "25 min",
     servings: 2,
-    ingredients: ["quinoa", "cucumber", "tomato", "olives", "cheese", "lemon", "olive-oil", "parsley", "pepper", "salt"],
+    ingredients: ["quinoa", "cucumber", "tomato", "olives", "cheese", "lemon", "olive-oil", "parsley", "pepper", "salt", "tomatoes"],
     ingredientAmounts: [
       { id: "quinoa", amount: "1", unit: "cup" },
       { id: "cucumber", amount: "1", unit: "medium" },
@@ -1596,6 +1598,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "parsley", amount: "0.25", unit: "cup" },
       { id: "pepper", amount: "to taste", unit: "" },
       { id: "salt", amount: "0.5", unit: "teaspoon" },
+      { id: "tomatoes", amount: "1", unit: "cup" },
     ],
   instructions: [
       "Rinse 1 cup quinoa under cold water for 30 seconds to remove bitter coating. Add to pot with 2 cups water and ½ teaspoon salt. Bring to boil, reduce heat, cover, and simmer 15 minutes until water is absorbed.",
@@ -1658,7 +1661,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Mozzarella, tomato, and basil on crusty bread",
     cookTime: "10 min",
     servings: 1,
-    ingredients: ["bread", "cheese", "tomato", "basil", "olive-oil", "balsamic", "salt", "mozzarella", "pepper"],
+    ingredients: ["bread", "cheese", "tomato", "basil", "olive-oil", "balsamic", "salt", "mozzarella", "pepper", "balsamic-vinegar", "tomatoes"],
   instructions: [
       "Slice a fresh baguette or ciabatta in half lengthwise. Toast cut-side down in a pan with a drizzle of olive oil until light golden, about 2 minutes.",
       "Slice fresh mozzarella into ¼-inch thick rounds. Slice 2 ripe tomatoes to similar thickness. Pat tomatoes dry to prevent soggy bread.",
@@ -1721,7 +1724,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Protein-rich chickpea salad with fresh vegetables",
     cookTime: "10 min",
     servings: 2,
-    ingredients: ["chickpeas", "cucumber", "tomato", "onion", "parsley", "lemon", "olive-oil", "pepper", "salt", "mint"],
+    ingredients: ["chickpeas", "cucumber", "tomato", "onion", "parsley", "lemon", "olive-oil", "pepper", "salt", "mint", "tomatoes"],
   instructions: [
       "Open and drain 1 can (15 oz) of chickpeas. Rinse thoroughly under cold water and drain well. Pat dry with paper towels for better texture.",
       "Dice 1 medium cucumber, 2 Roma tomatoes, and ¼ red onion into ½-inch pieces. Keep the pieces uniform for even bites.",
@@ -1836,7 +1839,7 @@ export const sampleRecipes: Recipe[] = [
     description: "The famous hexagon-wrapped creation with seasoned beef, nacho cheese, tostada, and all the fixings",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["ground-beef", "flour", "cheese", "lettuce", "tomato", "sour-cream", "taco-seasoning", "tortilla-chips", "vegetable-oil"],
+    ingredients: ["ground-beef", "flour", "cheese", "lettuce", "tomato", "sour-cream", "taco-seasoning", "tortilla-chips", "vegetable-oil", "tomatoes"],
     ingredientAmounts: [
       { id: "ground-beef", amount: "1", unit: "lb" },
       { id: "flour", amount: "4", unit: "12-inch flour tortillas" },
@@ -1847,6 +1850,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "taco-seasoning", amount: "1", unit: "packet" },
       { id: "tortilla-chips", amount: "4", unit: "tostada shells or round chips" },
       { id: "vegetable-oil", amount: "2", unit: "tbsp" },
+      { id: "tomatoes", amount: "as needed", unit: "" },
     ],
     keyIngredients: ["ground-beef", "flour"],
     instructions: [
@@ -2028,7 +2032,7 @@ export const sampleRecipes: Recipe[] = [
     description: "The most popular Chinese-American dish with crispy fried chicken in a sweet and tangy orange glaze",
     cookTime: "35 min",
     servings: 4,
-    ingredients: ["chicken-breast", "flour", "eggs", "cornstarch", "orange", "soy-sauce", "rice-vinegar", "brown-sugar", "garlic", "ginger", "sesame-oil", "vegetable-oil", "salt"],
+    ingredients: ["chicken-breast", "flour", "eggs", "cornstarch", "orange", "soy-sauce", "rice-vinegar", "brown-sugar", "garlic", "ginger", "sesame-oil", "vegetable-oil", "salt", "orange-zest"],
     ingredientAmounts: [
       { id: "chicken-breast", amount: "1.5", unit: "lbs" },
       { id: "flour", amount: "0.5", unit: "cup" },
@@ -2043,6 +2047,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "sesame-oil", amount: "1", unit: "tsp" },
       { id: "vegetable-oil", amount: "2", unit: "cups" },
       { id: "salt", amount: "0.5", unit: "tsp" },
+      { id: "orange-zest", amount: "as needed", unit: "" },
     ],
     keyIngredients: ["chicken-breast", "orange"],
     instructions: [
@@ -2284,7 +2289,7 @@ export const sampleRecipes: Recipe[] = [
     description: "A flaky buttermilk biscuit loaded with a seasoned sausage patty, fluffy folded egg, and melted American cheese",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["sausage-breakfast", "eggs", "cheese", "flour", "butter", "milk", "baking-powder", "salt", "pepper"],
+    ingredients: ["sausage-breakfast", "eggs", "cheese", "flour", "butter", "milk", "baking-powder", "salt", "pepper", "buttermilk"],
     ingredientAmounts: [
       { id: "sausage-breakfast", amount: "1", unit: "lb" },
       { id: "eggs", amount: "4", unit: "large" },
@@ -2295,6 +2300,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "baking-powder", amount: "1", unit: "tbsp" },
       { id: "salt", amount: "1", unit: "tsp" },
       { id: "pepper", amount: "to taste", unit: "" },
+      { id: "buttermilk", amount: "0.75", unit: "cup" },
     ],
     keyIngredients: ["sausage-breakfast", "eggs"],
     instructions: [
@@ -2367,7 +2373,7 @@ export const sampleRecipes: Recipe[] = [
     description: "A warm flour tortilla wrapped around fluffy scrambled eggs, savory sausage, melted cheese, and crispy hash browns",
     cookTime: "20 min",
     servings: 2,
-    ingredients: ["eggs", "sausage-breakfast", "cheese", "flour", "potatoes", "onion", "salt", "pepper", "vegetable-oil"],
+    ingredients: ["eggs", "sausage-breakfast", "cheese", "flour", "potatoes", "onion", "salt", "pepper", "vegetable-oil", "flour-tortillas"],
     ingredientAmounts: [
       { id: "eggs", amount: "4", unit: "large" },
       { id: "sausage-breakfast", amount: "0.5", unit: "lb" },
@@ -2378,6 +2384,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "salt", amount: "0.5", unit: "tsp" },
       { id: "pepper", amount: "0.25", unit: "tsp" },
       { id: "vegetable-oil", amount: "2", unit: "tbsp" },
+      { id: "flour-tortillas", amount: "as needed", unit: "" },
     ],
     keyIngredients: ["eggs", "sausage-breakfast", "cheese"],
     instructions: [
@@ -2410,7 +2417,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Juicy pan-seared chicken in a rich garlic butter sauce",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["chicken", "butter", "garlic", "thyme", "lemon", "salt", "pepper"],
+    ingredients: ["chicken", "butter", "garlic", "thyme", "lemon", "salt", "pepper", "chicken-thighs"],
   instructions: [
       "Pat 4 chicken thighs or breasts completely dry with paper towels—this is essential for browning. Season generously on both sides with 1 teaspoon salt, ½ teaspoon pepper, and 1 teaspoon dried thyme.",
       "Heat a large heavy skillet (cast iron is ideal) over medium-high heat. Add 2 tablespoons butter. When it foams and the foam subsides, the pan is ready.",
@@ -2497,7 +2504,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Seasoned fish with fresh slaw in warm tortillas",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["fish", "flour", "lettuce", "tomato", "lime", "cumin", "chili-powder", "sour-cream", "vegetable-oil", "cabbage", "tilapia", "pepper", "salt", "corn", "cod"],
+    ingredients: ["fish", "flour", "lettuce", "tomato", "lime", "cumin", "chili-powder", "sour-cream", "vegetable-oil", "cabbage", "tilapia", "pepper", "salt", "corn", "cod", "flour-tortillas", "tomatoes"],
   instructions: [
       "Cut 1 lb white fish (cod, tilapia, or mahi-mahi) into 2-inch pieces. Season generously with 1 teaspoon cumin, 1 teaspoon chili powder, ½ teaspoon salt, and ¼ teaspoon pepper.",
       "Place ½ cup flour in a shallow bowl. Dredge each fish piece in flour, shaking off excess. The coating should be light.",
@@ -2555,7 +2562,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Aromatic curry with tender chicken and coconut milk",
     cookTime: "35 min",
     servings: 4,
-    ingredients: ["chicken", "coconut-milk", "onion", "garlic", "ginger", "curry-powder", "tomatoes", "rice", "oil"],
+    ingredients: ["chicken", "coconut-milk", "onion", "garlic", "ginger", "curry-powder", "tomatoes", "rice", "oil", "chicken-thighs"],
   instructions: [
       "Dice 1 large onion. Mince 4 garlic cloves and 1 inch of fresh ginger (or use 1 teaspoon ground ginger). Cut 1½ lbs chicken thighs into 2-inch pieces.",
       "Heat 2 tablespoons oil in a large deep pan or Dutch oven over medium heat. Sauté onion for 5 minutes until softened and translucent.",
@@ -2644,7 +2651,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Juicy pork chops with apple cider glaze",
     cookTime: "25 min",
     servings: 2,
-    ingredients: ["pork", "apple", "butter", "thyme", "garlic", "salt", "pepper", "honey", "vegetable-oil"],
+    ingredients: ["pork", "apple", "butter", "thyme", "garlic", "salt", "pepper", "honey", "vegetable-oil", "pork-chops"],
     instructions: [
       "Remove 2 bone-in pork chops (1-inch thick) from refrigerator 30 minutes before cooking. Pat completely dry with paper towels. Season generously on both sides with 1 teaspoon salt, ½ teaspoon pepper, and 1 teaspoon dried thyme.",
       "Heat a large cast-iron skillet over medium-high heat until very hot, about 3 minutes. Add 1 tablespoon vegetable oil. Place pork chops in pan—you should hear an immediate sizzle.",
@@ -2733,7 +2740,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Glazed chicken with steamed rice and vegetables",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["chicken", "rice", "soy-sauce", "honey", "garlic", "ginger", "broccoli", "carrot", "teriyaki-sauce", "salt", "oil"],
+    ingredients: ["chicken", "rice", "soy-sauce", "honey", "garlic", "ginger", "broccoli", "carrot", "teriyaki-sauce", "salt", "oil", "chicken-thighs"],
     instructions: [
       "Cook 2 cups jasmine rice according to package. Fluff with fork and keep warm. Cut 1½ lbs chicken thighs into 2-inch pieces.",
       "Make teriyaki sauce: In a small saucepan, whisk ½ cup soy sauce, ¼ cup honey, 3 minced garlic cloves, 1 tablespoon grated ginger, and 2 tablespoons water. Simmer 5 minutes until slightly thickened. Reserve half for serving.",
@@ -2798,7 +2805,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Spiced ground beef in crispy shells with fresh toppings",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["beef", "taco-seasoning", "lettuce", "tomato", "cheese", "sour-cream", "onion", "garlic-powder", "chili-powder", "paprika", "cumin", "salt"],
+    ingredients: ["beef", "taco-seasoning", "lettuce", "tomato", "cheese", "sour-cream", "onion", "garlic-powder", "chili-powder", "paprika", "cumin", "salt", "tomatoes"],
     instructions: [
       "Heat a large skillet over medium-high heat. Add 1 lb ground beef, breaking into crumbles with a wooden spoon. Cook 6-8 minutes until no pink remains. Drain excess fat, leaving about 1 tablespoon in the pan.",
       "Add ½ diced onion to the beef. Cook 3 minutes until softened. Add 2 tablespoons taco seasoning (or 1 teaspoon each cumin, chili powder, paprika, plus ½ teaspoon garlic powder and salt).",
@@ -2906,7 +2913,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Crispy chicken thighs glazed with sweet honey garlic sauce",
     cookTime: "35 min",
     servings: 4,
-    ingredients: ["chicken", "honey", "garlic", "soy-sauce", "butter", "thyme", "salt", "pepper"],
+    ingredients: ["chicken", "honey", "garlic", "soy-sauce", "butter", "thyme", "salt", "pepper", "chicken-thighs"],
     instructions: [
       "Pat 4 bone-in, skin-on chicken thighs very dry with paper towels—this is crucial for crispy skin. Season both sides generously with 1 teaspoon salt and ½ teaspoon pepper.",
       "Place thighs skin-side down in a cold large skillet. Turn heat to medium. Cook without moving for 12-15 minutes. The fat will render slowly and skin will become deeply golden and crispy.",
@@ -3034,7 +3041,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Pan-seared chicken cutlets in a bright lemon-caper butter sauce",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["chicken", "flour", "butter", "lemon", "capers", "garlic", "parsley", "salt", "pepper", "olive-oil"],
+    ingredients: ["chicken", "flour", "butter", "lemon", "capers", "garlic", "parsley", "salt", "pepper", "olive-oil", "chicken-breast"],
     ingredientAmounts: [
       { id: "chicken", amount: "4", unit: "breasts" },
       { id: "flour", amount: "0.5", unit: "cup" },
@@ -3046,6 +3053,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "salt", amount: "1", unit: "tsp" },
       { id: "pepper", amount: "0.5", unit: "tsp" },
       { id: "olive-oil", amount: "3", unit: "tbsp" },
+      { id: "chicken-breast", amount: "4", unit: "" },
     ],
     instructions: [
       "Place 4 chicken breasts between plastic wrap. Using a meat mallet or rolling pin, pound to an even ½-inch thickness. This ensures even cooking. Season both sides with salt and pepper.",
@@ -3079,7 +3087,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Tender chicken in a rich mushroom Marsala wine sauce",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["chicken", "mushroom", "flour", "butter", "garlic", "parsley", "salt", "pepper", "olive-oil", "marsala-wine"],
+    ingredients: ["chicken", "mushroom", "flour", "butter", "garlic", "parsley", "salt", "pepper", "olive-oil", "marsala-wine", "chicken-breast", "chicken-broth"],
     ingredientAmounts: [
       { id: "chicken", amount: "4", unit: "breasts" },
       { id: "mushroom", amount: "8", unit: "oz" },
@@ -3091,6 +3099,8 @@ export const sampleRecipes: Recipe[] = [
       { id: "pepper", amount: "0.5", unit: "tsp" },
       { id: "olive-oil", amount: "3", unit: "tbsp" },
       { id: "marsala-wine", amount: "as needed", unit: "" },
+      { id: "chicken-breast", amount: "4", unit: "" },
+      { id: "chicken-broth", amount: "0.5", unit: "cup" },
     ],
     instructions: [
       "Pound 4 chicken breasts between plastic wrap to ½-inch thickness. Season generously with 1 teaspoon salt and ½ teaspoon pepper. Dredge in ½ cup flour, shaking off excess.",
@@ -3124,7 +3134,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Crispy breaded chicken topped with marinara and melted mozzarella",
     cookTime: "35 min",
     servings: 4,
-    ingredients: ["chicken", "bread-crumbs", "parmesan", "mozzarella", "eggs", "tomato-sauce", "garlic", "basil", "olive-oil", "marinara-sauce", "breadcrumbs", "flour"],
+    ingredients: ["chicken", "bread-crumbs", "parmesan", "mozzarella", "eggs", "tomato-sauce", "garlic", "basil", "olive-oil", "marinara-sauce", "breadcrumbs", "flour", "chicken-breast"],
     ingredientAmounts: [
       { id: "chicken", amount: "4", unit: "breasts" },
       { id: "bread-crumbs", amount: "1", unit: "cup" },
@@ -3138,6 +3148,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "marinara-sauce", amount: "as needed", unit: "" },
       { id: "breadcrumbs", amount: "1", unit: "cup" },
       { id: "flour", amount: "as needed", unit: "" },
+      { id: "chicken-breast", amount: "4", unit: "" },
     ],
     instructions: [
       "Preheat oven to 425°F (220°C). Pound 4 chicken breasts to ½-inch thickness between plastic wrap. Set up a breading station: flour in one dish, 2 beaten eggs in another, and a mixture of 1 cup breadcrumbs + ½ cup grated Parmesan in a third.",
@@ -3252,7 +3263,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Rolled tortillas filled with seasoned chicken and smothered in enchilada sauce",
     cookTime: "40 min",
     servings: 6,
-    ingredients: ["chicken", "tortillas", "cheese", "onion", "garlic", "cumin", "tomato-sauce", "sour-cream", "cilantro", "flour-tortillas", "enchilada-sauce", "salt"],
+    ingredients: ["chicken", "tortillas", "cheese", "onion", "garlic", "cumin", "tomato-sauce", "sour-cream", "cilantro", "flour-tortillas", "enchilada-sauce", "salt", "chicken-breast", "garlic-powder"],
     instructions: [
       "Preheat oven to 375°F (190°C). Poach 1½ lbs chicken breasts in simmering salted water for 18-20 minutes until cooked through. Let cool slightly, then shred with two forks into bite-sized pieces.",
       "Mix shredded chicken with 1 cup shredded cheese, 1 teaspoon cumin, ½ teaspoon garlic powder, and salt to taste. This is your filling.",
@@ -3278,7 +3289,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Slow-cooked pulled pork with citrus and spices",
     cookTime: "3 hours",
     servings: 8,
-    ingredients: ["pork", "orange", "lime", "garlic", "cumin", "oregano", "salt", "pepper", "vegetable-oil", "bay-leaf"],
+    ingredients: ["pork", "orange", "lime", "garlic", "cumin", "oregano", "salt", "pepper", "vegetable-oil", "bay-leaf", "pork-shoulder"],
     instructions: [
       "Cut 3 lbs pork shoulder (pork butt) into 3-inch chunks. Season generously with 1 tablespoon salt, 2 teaspoons cumin, 1 teaspoon oregano, ½ teaspoon pepper, and 6 minced garlic cloves. Rub spices into all surfaces.",
       "Place pork in a Dutch oven or slow cooker. Add the juice of 2 oranges and 2 limes, plus their spent halves. Add 1 bay leaf and enough water to come halfway up the meat.",
@@ -3305,7 +3316,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Deconstructed burrito with rice, beans, and fresh toppings",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["chicken", "rice", "beans", "corn", "tomato", "avocado", "lettuce", "cheese", "lime", "cilantro", "chili-powder", "black-beans", "pepper", "cumin", "salt"],
+    ingredients: ["chicken", "rice", "beans", "corn", "tomato", "avocado", "lettuce", "cheese", "lime", "cilantro", "chili-powder", "black-beans", "pepper", "cumin", "salt", "chicken-breast", "tomatoes"],
     instructions: [
       "Cook 1½ cups long-grain rice according to package. Fluff with fork and stir in juice of 1 lime and ¼ cup chopped cilantro. Cover to keep warm.",
       "Season 1½ lbs chicken breast with 1 teaspoon cumin, 1 teaspoon chili powder, salt, and pepper. Grill over medium-high heat 6-7 minutes per side until internal temp reaches 165°F. Let rest 5 minutes, then slice into strips.",
@@ -3328,7 +3339,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Crispy tortilla filled with melted cheese and seasoned chicken",
     cookTime: "15 min",
     servings: 2,
-    ingredients: ["chicken", "tortillas", "cheese", "bell-pepper", "onion", "cumin", "sour-cream", "salsa", "flour", "salt", "oil"],
+    ingredients: ["chicken", "tortillas", "cheese", "bell-pepper", "onion", "cumin", "sour-cream", "salsa", "flour", "salt", "oil", "chicken-breast"],
     instructions: [
       "Season 8 oz chicken breast with ½ teaspoon cumin, salt, and pepper. Cook in an oiled skillet over medium-high heat for 6-7 minutes per side until internal temp reaches 165°F. Let rest 5 minutes, then slice into thin strips.",
       "In the same pan, add 1 tablespoon oil. Sauté ½ sliced bell pepper and ¼ sliced onion over medium-high heat for 4-5 minutes until slightly charred and tender. Season with salt.",
@@ -3407,7 +3418,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Spicy Sichuan chicken with peanuts and dried chilies",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["chicken", "peanuts", "garlic", "ginger", "soy-sauce", "green-onion", "vegetable-oil", "rice", "red-pepper-flakes", "sesame-oil", "cornstarch", "sugar"],
+    ingredients: ["chicken", "peanuts", "garlic", "ginger", "soy-sauce", "green-onion", "vegetable-oil", "rice", "red-pepper-flakes", "sesame-oil", "cornstarch", "sugar", "chicken-thighs", "rice-vinegar"],
     instructions: [
       "Cut 1½ lbs boneless chicken thighs into 1-inch cubes. Marinate in 2 tablespoons soy sauce, 1 tablespoon rice wine (or dry sherry), and 1 teaspoon cornstarch for 15 minutes.",
       "Make the sauce: Whisk 2 tablespoons soy sauce, 1 tablespoon rice vinegar, 2 teaspoons sugar, 1 teaspoon sesame oil, and 1 tablespoon cornstarch with 3 tablespoons water. Set aside.",
@@ -3434,7 +3445,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Crispy fried chicken in sweet and tangy orange sauce",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["chicken", "orange", "garlic", "ginger", "soy-sauce", "flour", "eggs", "vegetable-oil", "rice", "cornstarch", "sugar", "salt"],
+    ingredients: ["chicken", "orange", "garlic", "ginger", "soy-sauce", "flour", "eggs", "vegetable-oil", "rice", "cornstarch", "sugar", "salt", "chicken-thighs", "rice-vinegar"],
     instructions: [
       "Cut 1½ lbs boneless chicken thighs into 1½-inch pieces. Season with ½ teaspoon salt. Set up breading: ½ cup flour in one bowl, 2 beaten eggs in another, ½ cup cornstarch in a third.",
       "Dredge chicken pieces in flour, dip in egg, then coat in cornstarch. Shake off excess. Let sit on a wire rack for 5 minutes (this helps coating adhere).",
@@ -3460,7 +3471,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Sweet and spicy crispy chicken with broccoli",
     cookTime: "35 min",
     servings: 4,
-    ingredients: ["chicken", "broccoli", "garlic", "ginger", "soy-sauce", "flour", "eggs", "vegetable-oil", "rice", "sesame-oil", "cornstarch", "sugar", "salt"],
+    ingredients: ["chicken", "broccoli", "garlic", "ginger", "soy-sauce", "flour", "eggs", "vegetable-oil", "rice", "sesame-oil", "cornstarch", "sugar", "salt", "chicken-thighs", "chicken-broth", "rice-vinegar"],
     instructions: [
       "Cut 1½ lbs chicken thighs into 1½-inch pieces. Whisk 2 eggs with ½ teaspoon salt. Add chicken and toss to coat. Dredge in ½ cup flour mixed with ½ cup cornstarch.",
       "Heat 2 inches vegetable oil to 350°F. Fry chicken in batches 4-5 minutes until golden and crispy. Drain on paper towels. Cut 3 cups broccoli into florets and steam 4 minutes until bright green.",
@@ -3486,7 +3497,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Aromatic coconut curry with chicken and vegetables",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["chicken", "coconut", "bell-pepper", "zucchini", "basil", "garlic", "ginger", "rice", "fish-sauce", "salt", "oil"],
+    ingredients: ["chicken", "coconut", "bell-pepper", "zucchini", "basil", "garlic", "ginger", "rice", "fish-sauce", "salt", "oil", "chicken-thighs", "chicken-broth", "coconut-milk"],
     instructions: [
       "Cook 1½ cups jasmine rice according to package. Keep warm. Cut 1 lb chicken thighs into bite-sized pieces. Slice 1 bell pepper and 1 small zucchini into thin strips.",
       "Heat 1 tablespoon oil in a wok or large pan over medium-high heat. Add 2-3 tablespoons green curry paste (adjust to taste), 2 minced garlic cloves, and 1 tablespoon minced ginger. Stir 1 minute until fragrant.",
@@ -3513,7 +3524,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Japanese-style breaded and fried chicken cutlet",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["chicken", "bread-crumbs", "eggs", "flour", "cabbage", "rice", "vegetable-oil", "panko-breadcrumbs", "pepper", "salt"],
+    ingredients: ["chicken", "bread-crumbs", "eggs", "flour", "cabbage", "rice", "vegetable-oil", "panko-breadcrumbs", "pepper", "salt", "chicken-breast", "rice-vinegar"],
     instructions: [
       "Place 4 chicken breasts between plastic wrap. Pound to an even ½-inch thickness. Season both sides with salt and pepper.",
       "Set up breading station: ½ cup flour in one dish, 2 beaten eggs in another, 1 cup panko breadcrumbs in a third. Dredge chicken in flour (shake off excess), dip in egg (let excess drip), then press firmly into panko on both sides.",
@@ -3553,7 +3564,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Eggs poached in spiced tomato sauce",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["eggs", "tomato", "onion", "bell-pepper", "garlic", "cumin", "paprika", "olive-oil", "parsley", "cayenne", "salt"],
+    ingredients: ["eggs", "tomato", "onion", "bell-pepper", "garlic", "cumin", "paprika", "olive-oil", "parsley", "cayenne", "salt", "tomatoes"],
     instructions: [
       "Heat 2 tablespoons olive oil in a large oven-safe skillet over medium heat. Add 1 diced onion and 1 diced bell pepper. Sauté 5-6 minutes until softened and slightly caramelized.",
       "Add 4 minced garlic cloves, 1 teaspoon cumin, 1 teaspoon paprika (smoked paprika is best), and ½ teaspoon cayenne (optional). Stir 1 minute until very fragrant.",
@@ -3574,7 +3585,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Crispy falafel with hummus, vegetables, and tahini",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["chickpeas", "garlic", "onion", "parsley", "cumin", "lettuce", "tomato", "cucumber", "olive-oil", "vegetable-oil", "cayenne", "tahini", "flour", "lemon", "salt"],
+    ingredients: ["chickpeas", "garlic", "onion", "parsley", "cumin", "lettuce", "tomato", "cucumber", "olive-oil", "vegetable-oil", "cayenne", "tahini", "flour", "lemon", "salt", "tomatoes"],
     instructions: [
       "Drain 2 cans (15 oz each) chickpeas. Rinse and pat dry. Add to food processor with ½ diced onion, 4 garlic cloves, 1 cup fresh parsley, 1 teaspoon cumin, 1 teaspoon salt, ½ teaspoon cayenne, and 3 tablespoons flour.",
       "Pulse until mixture is finely ground but NOT a paste—you want some texture. It should hold together when pressed. Refrigerate 30 minutes to firm up.",
@@ -3693,7 +3704,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Creamy chicken and vegetable filling under flaky crust",
     cookTime: "50 min",
     servings: 6,
-    ingredients: ["chicken", "carrot", "peas", "potato", "onion", "butter", "flour", "milk", "chicken-broth", "puff-pastry", "pepper", "celery", "thyme", "salt", "egg"],
+    ingredients: ["chicken", "carrot", "peas", "potato", "onion", "butter", "flour", "milk", "chicken-broth", "puff-pastry", "pepper", "celery", "thyme", "salt", "egg", "chicken-breast"],
     instructions: [
       "Preheat oven to 400°F (200°C). Poach 1½ lbs chicken breast in simmering salted water for 18-20 minutes. Let cool slightly, then dice into ½-inch cubes.",
       "Dice 2 carrots, 2 stalks celery, and 1 small potato into ½-inch pieces. Dice 1 onion. In a large pot, melt 4 tablespoons butter over medium heat. Add vegetables and cook 8-10 minutes until softened.",
@@ -3715,7 +3726,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Herb-crusted salmon with roasted asparagus",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["salmon", "asparagus", "lemon", "garlic", "dill", "olive-oil", "salt", "pepper"],
+    ingredients: ["salmon", "asparagus", "lemon", "garlic", "dill", "olive-oil", "salt", "pepper", "salmon-fillet"],
     instructions: [
       "Preheat oven to 400°F (200°C). Snap off woody ends of 1 lb asparagus (they'll break naturally at the right spot). Toss with 1 tablespoon olive oil, 2 minced garlic cloves, salt, and pepper. Spread on a baking sheet.",
       "Pat 4 salmon fillets (6 oz each) dry. Season with 1 teaspoon salt, ½ teaspoon pepper, 1 tablespoon chopped fresh dill, and zest of 1 lemon. Place on a separate baking sheet lined with parchment.",
@@ -3733,7 +3744,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Low-carb bowl with cauliflower rice and fresh vegetables",
     cookTime: "20 min",
     servings: 2,
-    ingredients: ["cauliflower", "chicken", "avocado", "tomato", "cucumber", "lime", "cilantro", "olive-oil", "chili-powder", "pepper", "cumin", "salt"],
+    ingredients: ["cauliflower", "chicken", "avocado", "tomato", "cucumber", "lime", "cilantro", "olive-oil", "chili-powder", "pepper", "cumin", "salt", "chicken-breast"],
     instructions: [
       "Cut 1 medium head cauliflower into florets. Working in batches, pulse in food processor until it resembles rice grains—don't over-process or it becomes mushy. You should get about 4 cups.",
       "Season 8 oz chicken breast with 1 teaspoon cumin, ½ teaspoon chili powder, salt, and pepper. Grill or pan-sear over medium-high heat 6-7 minutes per side until internal temp reaches 165°F. Let rest 5 minutes, then slice.",
@@ -3797,7 +3808,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Creamy coconut curry loaded with vegetables",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["coconut", "potato", "carrot", "bell-pepper", "onion", "garlic", "ginger", "rice", "vegetable-broth", "curry-powder", "sugar", "salt", "lime", "oil"],
+    ingredients: ["coconut", "potato", "carrot", "bell-pepper", "onion", "garlic", "ginger", "rice", "vegetable-broth", "curry-powder", "sugar", "salt", "lime", "oil", "coconut-milk"],
     instructions: [
       "Cook 1½ cups basmati rice according to package. Keep warm. Dice 2 medium potatoes, 2 carrots, and 1 bell pepper into 1-inch cubes.",
       "Heat 2 tablespoons oil in a large pot or Dutch oven over medium heat. Add 1 diced onion and cook 5 minutes until softened. Add 4 minced garlic cloves and 1 tablespoon minced fresh ginger. Stir 1 minute.",
@@ -3818,7 +3829,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Spiced black beans with fresh toppings in corn tortillas",
     cookTime: "20 min",
     servings: 4,
-    ingredients: ["beans", "tortillas", "avocado", "tomato", "onion", "lime", "cilantro", "cumin", "cheese", "flour-tortillas", "garlic-powder", "chili-powder", "black-beans", "salt", "corn"],
+    ingredients: ["beans", "tortillas", "avocado", "tomato", "onion", "lime", "cilantro", "cumin", "cheese", "flour-tortillas", "garlic-powder", "chili-powder", "black-beans", "salt", "corn", "tomatoes"],
     instructions: [
       "Drain and rinse 2 cans (15 oz each) black beans. In a saucepan, heat beans with 1 teaspoon cumin, ½ teaspoon chili powder, ¼ teaspoon garlic powder, and salt to taste. Mash about half the beans with a fork for better texture.",
       "Prep toppings: Dice 2 tomatoes, thinly slice ¼ red onion, chop ¼ cup fresh cilantro. Slice 1 avocado and toss with lime juice to prevent browning.",
@@ -3836,7 +3847,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Fresh mozzarella, tomatoes, and basil with balsamic",
     cookTime: "10 min",
     servings: 4,
-    ingredients: ["mozzarella", "tomato", "basil", "olive-oil", "salt", "pepper", "balsamic-vinegar"],
+    ingredients: ["mozzarella", "tomato", "basil", "olive-oil", "salt", "pepper", "balsamic-vinegar", "tomatoes"],
     instructions: [
       "Use the best quality ingredients you can find—this simple salad relies on their flavors. Choose ripe, in-season tomatoes and fresh mozzarella (the kind packed in water, not the dry shredded type).",
       "Slice 2-3 large ripe tomatoes and 8 oz fresh mozzarella into ¼-inch thick rounds. Try to make them similar thickness for even stacking.",
@@ -3894,7 +3905,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Tender chicken cutlets in a rich Marsala wine and mushroom sauce",
     cookTime: "40 min",
     servings: 4,
-    ingredients: ["chicken", "marsala-wine", "mushroom", "butter", "flour", "garlic", "shallots", "cream", "parsley", "olive-oil", "pepper", "salt"],
+    ingredients: ["chicken", "marsala-wine", "mushroom", "butter", "flour", "garlic", "shallots", "cream", "parsley", "olive-oil", "pepper", "salt", "chicken-breast", "chicken-broth"],
     instructions: [
       "Pound 4 chicken breasts between plastic wrap to ½-inch thickness. Season both sides with salt and pepper. Dredge in flour, shaking off excess.",
       "Heat 2 tablespoons each butter and olive oil in a large skillet over medium-high heat. Cook chicken 3-4 minutes per side until golden and cooked through. Transfer to plate.",
@@ -3934,7 +3945,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Pan-seared salmon with a sweet and smoky bourbon glaze",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["salmon", "bourbon", "honey", "soy-sauce", "garlic", "ginger", "butter", "brown-sugar", "pepper", "salt", "oil"],
+    ingredients: ["salmon", "bourbon", "honey", "soy-sauce", "garlic", "ginger", "butter", "brown-sugar", "pepper", "salt", "oil", "salmon-fillet"],
     instructions: [
       "Make glaze: In a saucepan, combine ¼ cup bourbon, 3 tablespoons honey, 2 tablespoons soy sauce, 2 tablespoons brown sugar, 2 minced garlic cloves, and 1 teaspoon grated ginger. Simmer 8-10 minutes until syrupy.",
       "Pat 4 salmon fillets dry with paper towels. Season generously with salt and pepper on both sides.",
@@ -4018,7 +4029,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Classic comfort meatloaf with tangy glaze",
     cookTime: "1 hour 15 min",
     servings: 6,
-    ingredients: ["ground-beef", "onion", "eggs", "bread", "milk", "garlic", "worcestershire", "ketchup", "brown-sugar", "mustard", "pepper", "salt"],
+    ingredients: ["ground-beef", "onion", "eggs", "bread", "milk", "garlic", "worcestershire", "ketchup", "brown-sugar", "mustard", "pepper", "salt", "worcestershire-sauce"],
     instructions: [
       "Preheat oven to 350°F. Soak 2 slices bread torn into pieces in ½ cup milk for 5 minutes. Mash with fork.",
       "In a large bowl, combine 2 lbs ground beef, the bread mixture, 1 beaten egg, ½ cup finely diced onion, 2 minced garlic cloves, 1 tablespoon Worcestershire sauce, 1 teaspoon salt, and ½ teaspoon pepper. Mix gently—don't overwork.",
@@ -4038,7 +4049,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Classic chicken and vegetable filling under a flaky crust",
     cookTime: "1 hour 30 min",
     servings: 6,
-    ingredients: ["chicken", "butter", "flour", "onion", "carrot", "celery", "peas", "cream", "chicken-broth", "thyme", "puff-pastry", "pepper", "salt", "egg"],
+    ingredients: ["chicken", "butter", "flour", "onion", "carrot", "celery", "peas", "cream", "chicken-broth", "thyme", "puff-pastry", "pepper", "salt", "egg", "chicken-breast"],
     instructions: [
       "Poach 1½ lbs chicken breasts in salted water 20 minutes. Let cool, then shred into bite-sized pieces.",
       "Melt 5 tablespoons butter in a large pot over medium heat. Add 1 diced onion, 2 diced carrots, 2 diced celery stalks. Cook 8 minutes until soft.",
@@ -4058,7 +4069,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Creamy three-cheese mac with a crispy breadcrumb topping",
     cookTime: "45 min",
     servings: 8,
-    ingredients: ["pasta", "cheese-cheddar", "cheese-gruyere", "cheese-parmesan", "butter", "flour", "milk", "cream", "mustard", "bread", "paprika", "salt"],
+    ingredients: ["pasta", "cheese-cheddar", "cheese-gruyere", "cheese-parmesan", "butter", "flour", "milk", "cream", "mustard", "bread", "paprika", "salt", "panko-breadcrumbs"],
     instructions: [
       "Cook 1 lb elbow macaroni in salted water until just shy of al dente. Drain and set aside.",
       "Melt 4 tablespoons butter in a large pot over medium heat. Whisk in 4 tablespoons flour, cook 2 minutes. Gradually whisk in 3 cups whole milk and 1 cup cream. Simmer until thickened, about 8 minutes.",
@@ -4080,7 +4091,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Protein-packed quinoa with fresh vegetables and feta",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["quinoa", "cucumber", "tomato", "onion-red", "olives", "feta", "chickpeas", "lemon", "olive-oil", "parsley", "red-onion", "oregano", "pepper", "garlic", "salt"],
+    ingredients: ["quinoa", "cucumber", "tomato", "onion-red", "olives", "feta", "chickpeas", "lemon", "olive-oil", "parsley", "red-onion", "oregano", "pepper", "garlic", "salt", "cherry-tomatoes", "feta-cheese", "tomatoes"],
     instructions: [
       "Rinse 1 cup quinoa under cold water. Combine with 2 cups water in a pot. Bring to boil, reduce heat, cover, and simmer 15 minutes until water is absorbed. Fluff with fork and let cool.",
       "Dice 1 English cucumber, 1 pint cherry tomatoes, and ¼ red onion. Drain and rinse one 15-oz can chickpeas.",
@@ -4101,7 +4112,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Lean grilled chicken over greens with avocado and seeds",
     cookTime: "30 min",
     servings: 2,
-    ingredients: ["chicken-breast", "spinach", "avocado", "tomato", "quinoa", "olive-oil", "lemon", "garlic", "sunflower-seeds", "pepper", "salt"],
+    ingredients: ["chicken-breast", "spinach", "avocado", "tomato", "quinoa", "olive-oil", "lemon", "garlic", "sunflower-seeds", "pepper", "salt", "cherry-tomatoes"],
     instructions: [
       "Marinate 2 chicken breasts in 2 tablespoons olive oil, juice of ½ lemon, 2 minced garlic cloves, salt and pepper for 15 minutes.",
       "Cook ½ cup quinoa according to package directions. Let cool slightly.",
@@ -4122,7 +4133,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Heart-healthy salmon with colorful roasted vegetables",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["salmon", "broccoli", "bell-pepper", "zucchini", "olive-oil", "garlic", "lemon", "thyme", "salt", "pepper"],
+    ingredients: ["salmon", "broccoli", "bell-pepper", "zucchini", "olive-oil", "garlic", "lemon", "thyme", "salt", "pepper", "salmon-fillet"],
     instructions: [
       "Preheat oven to 400°F. Line a large sheet pan with parchment paper.",
       "Cut 2 cups broccoli florets, 2 bell peppers into chunks, and 2 zucchini into half-moons. Toss with 3 tablespoons olive oil, 3 minced garlic cloves, salt and pepper. Spread on pan.",
@@ -4165,7 +4176,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Aromatic slow-cooked chicken with preserved lemons and olives",
     cookTime: "1 hour 15 min",
     servings: 4,
-    ingredients: ["chicken", "onion", "garlic", "ginger", "turmeric", "cumin", "cinnamon", "olives", "lemon", "cilantro", "olive-oil", "pepper", "salt"],
+    ingredients: ["chicken", "onion", "garlic", "ginger", "turmeric", "cumin", "cinnamon", "olives", "lemon", "cilantro", "olive-oil", "pepper", "salt", "chicken-broth"],
     instructions: [
       "Season 3 lbs bone-in chicken pieces with salt, pepper, 1 teaspoon turmeric, 1 teaspoon cumin, and ½ teaspoon cinnamon.",
       "Heat 2 tablespoons olive oil in a tagine or Dutch oven over medium-high heat. Brown chicken on all sides, about 8 minutes. Remove to plate.",
@@ -4249,7 +4260,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Creamy baked macaroni with sharp cheddar and breadcrumb topping",
     cookTime: "45 min",
     servings: 6,
-    ingredients: ["pasta", "cheddar", "butter", "flour", "milk", "mustard", "breadcrumbs", "salt", "pepper"],
+    ingredients: ["pasta", "cheddar", "butter", "flour", "milk", "mustard", "breadcrumbs", "salt", "pepper", "mustard-powder"],
     instructions: [
       "Preheat oven to 375°F. Cook 1 lb elbow macaroni until al dente, drain.",
       "Make roux: Melt 4 tablespoons butter over medium heat, whisk in 4 tablespoons flour. Cook 2 minutes.",
@@ -4331,7 +4342,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Flaky pastry filled with creamy chicken and vegetables",
     cookTime: "1 hour",
     servings: 6,
-    ingredients: ["chicken", "pie-crust", "potato", "carrot", "peas", "onion", "celery", "cream", "butter", "flour", "chicken-broth", "egg"],
+    ingredients: ["chicken", "pie-crust", "potato", "carrot", "peas", "onion", "celery", "cream", "butter", "flour", "chicken-broth", "egg", "chicken-breast"],
     instructions: [
       "Poach 1.5 lbs chicken breast in salted water, shred when cool.",
       "Make filling: Sauté 1 diced onion, 2 diced carrots, 2 celery stalks in 4 tablespoons butter.",
@@ -4352,7 +4363,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Protein-packed quinoa with fresh vegetables and feta",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["quinoa", "cucumber", "tomato", "feta", "olives", "red-onion", "lemon", "olive-oil", "oregano", "pepper", "salt"],
+    ingredients: ["quinoa", "cucumber", "tomato", "feta", "olives", "red-onion", "lemon", "olive-oil", "oregano", "pepper", "salt", "cherry-tomatoes"],
     instructions: [
       "Cook 1 cup quinoa according to package. Fluff and cool to room temperature.",
       "Dice 1 cucumber, 2 cups cherry tomatoes, ½ red onion, and ½ cup kalamata olives.",
@@ -4373,7 +4384,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Mixed greens with juicy grilled chicken and balsamic vinaigrette",
     cookTime: "25 min",
     servings: 2,
-    ingredients: ["chicken", "lettuce", "tomato", "cucumber", "avocado", "red-onion", "olive-oil", "balsamic", "mixed-greens", "pepper", "salt"],
+    ingredients: ["chicken", "lettuce", "tomato", "cucumber", "avocado", "red-onion", "olive-oil", "balsamic", "mixed-greens", "pepper", "salt", "chicken-breast"],
     instructions: [
       "Season 2 chicken breasts with salt, pepper, and olive oil. Grill 6-7 minutes per side.",
       "Rest chicken 5 minutes, then slice.",
@@ -4394,7 +4405,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Lemon herb salmon with roasted seasonal vegetables",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["salmon", "broccoli", "bell-pepper", "zucchini", "lemon", "garlic", "olive-oil", "dill", "salt"],
+    ingredients: ["salmon", "broccoli", "bell-pepper", "zucchini", "lemon", "garlic", "olive-oil", "dill", "salt", "salmon-fillet"],
     instructions: [
       "Preheat oven to 400°F. Line a large sheet pan with parchment.",
       "Toss 4 cups mixed vegetables with 2 tablespoons olive oil, salt, pepper.",
@@ -4458,7 +4469,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Aromatic slow-cooked chicken with preserved lemons and olives",
     cookTime: "1 hour 30 min",
     servings: 4,
-    ingredients: ["chicken", "onion", "garlic", "saffron", "cumin", "ginger", "cinnamon", "lemon", "olives", "cilantro", "olive-oil", "turmeric", "salt"],
+    ingredients: ["chicken", "onion", "garlic", "saffron", "cumin", "ginger", "cinnamon", "lemon", "olives", "cilantro", "olive-oil", "turmeric", "salt", "chicken-broth"],
     instructions: [
       "Season 3 lbs chicken pieces with cumin, ginger, turmeric, cinnamon, salt.",
       "Sear chicken in olive oil until golden. Remove and set aside.",
@@ -4500,7 +4511,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Aromatic beef noodle soup with fresh herbs",
     cookTime: "45 min",
     servings: 4,
-    ingredients: ["beef", "rice-noodles", "onion", "ginger", "star-anise", "cinnamon", "fish-sauce", "basil", "lime", "bean-sprouts", "salt"],
+    ingredients: ["beef", "rice-noodles", "onion", "ginger", "star-anise", "cinnamon", "fish-sauce", "basil", "lime", "bean-sprouts", "salt", "beef-broth"],
     instructions: [
       "Toast 1 halved onion and 3-inch ginger under broiler until charred.",
       "Simmer 8 cups beef broth with charred aromatics, 2 star anise, 1 cinnamon stick for 30 minutes.",
@@ -4584,7 +4595,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Saffron-infused rice with seafood and chorizo",
     cookTime: "50 min",
     servings: 6,
-    ingredients: ["rice", "shrimp", "chorizo", "chicken", "bell-pepper", "onion", "garlic", "saffron", "tomatoes", "peas"],
+    ingredients: ["rice", "shrimp", "chorizo", "chicken", "bell-pepper", "onion", "garlic", "saffron", "tomatoes", "peas", "chicken-broth"],
     instructions: [
       "Heat large paella pan or skillet. Brown 8 oz diced chorizo and 1 lb chicken pieces. Remove.",
       "Sauté 1 diced onion, 1 diced bell pepper, 4 garlic cloves.",
@@ -4675,7 +4686,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Comforting homemade soup with tender chicken and vegetables",
     cookTime: "45 min",
     servings: 8,
-    ingredients: ["chicken", "egg-noodles", "carrot", "celery", "onion", "garlic", "chicken-broth", "thyme", "bay-leaves", "parsley", "olive-oil", "pepper", "salt"],
+    ingredients: ["chicken", "egg-noodles", "carrot", "celery", "onion", "garlic", "chicken-broth", "thyme", "bay-leaves", "parsley", "olive-oil", "pepper", "salt", "chicken-breast"],
     instructions: [
       "In large pot, sauté 1 diced onion, 3 carrots, and 4 celery stalks in 2 tablespoons olive oil until softened, 5-6 minutes.",
       "Add 4 minced garlic cloves, cook 1 minute until fragrant.",
@@ -4925,7 +4936,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Hearty salad with grilled chicken and homemade vinaigrette",
     cookTime: "20 min",
     servings: 2,
-    ingredients: ["chicken-breast", "lettuce", "tomato", "cucumber", "avocado", "eggs", "olive-oil", "lemon", "dijon", "honey", "garlic-powder", "pepper", "salt"],
+    ingredients: ["chicken-breast", "lettuce", "tomato", "cucumber", "avocado", "eggs", "olive-oil", "lemon", "dijon", "honey", "garlic-powder", "pepper", "salt", "tomatoes"],
     instructions: [
       "Season 2 chicken breasts with salt, pepper, garlic powder. Grill 6-7 minutes per side.",
       "While chicken rests, hard boil 2 eggs (10 minutes), peel and quarter.",
@@ -5365,7 +5376,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Perfect cut-out cookies for decorating with royal icing",
     cookTime: "40 min",
     servings: 36,
-    ingredients: ["flour", "butter", "sugar-white", "eggs", "vanilla", "baking-powder", "salt", "cream"],
+    ingredients: ["flour", "butter", "sugar-white", "eggs", "vanilla", "baking-powder", "salt", "cream", "vanilla-extract"],
     instructions: [
       "Cream 1 cup softened butter with 1 cup sugar until light and fluffy.",
       "Beat in 1 egg and 2 tsp vanilla extract.",
@@ -5393,7 +5404,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Tender pork shoulder braised in spiced apple cider",
     cookTime: "4 hours",
     servings: 8,
-    ingredients: ["pork", "apple-cider", "onion", "apple", "cinnamon", "cloves", "thyme", "chicken-broth", "pepper", "salt"],
+    ingredients: ["pork", "apple-cider", "onion", "apple", "cinnamon", "cloves", "thyme", "chicken-broth", "pepper", "salt", "pork-shoulder"],
     instructions: [
       "Season 4 lb pork shoulder generously with salt and pepper. Sear in Dutch oven until browned on all sides.",
       "Remove pork. Sauté 2 sliced onions and 2 sliced apples until softened.",
@@ -5791,7 +5802,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Traditional Brazilian black bean stew with pork and beef",
     cookTime: "3 hours",
     servings: 8,
-    ingredients: ["beans", "pork", "sausage-italian", "beef", "onion", "garlic", "bay-leaf", "orange", "rice", "black-beans", "bay-leaves", "pepper", "salt"],
+    ingredients: ["beans", "pork", "sausage-italian", "beef", "onion", "garlic", "bay-leaf", "orange", "rice", "black-beans", "bay-leaves", "pepper", "salt", "pork-shoulder"],
     instructions: [
       "Soak 1 lb black beans overnight. Drain and add to large pot with 8 cups water.",
       "Add 1 lb pork shoulder cubed, ½ lb smoked sausage sliced, ½ lb beef stew meat.",
@@ -5963,7 +5974,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Creamy spiced lentils with aromatic tempered spices",
     cookTime: "45 min",
     servings: 4,
-    ingredients: ["lentils", "onion", "tomato", "garlic", "ginger", "cumin", "turmeric", "coriander", "butter", "cilantro", "chili-powder", "salt"],
+    ingredients: ["lentils", "onion", "tomato", "garlic", "ginger", "cumin", "turmeric", "coriander", "butter", "cilantro", "chili-powder", "salt", "tomatoes"],
     instructions: [
       "Rinse 1 cup yellow lentils. Boil with 3 cups water, ½ tsp turmeric until very soft, about 25 minutes. Mash lightly.",
       "For tadka: heat 3 tbsp butter/ghee. Add 1 tsp cumin seeds until they sizzle.",
@@ -5986,7 +5997,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Fresh tuna with rice, avocado, and umami seasonings",
     cookTime: "20 min",
     servings: 2,
-    ingredients: ["tuna-steak", "rice", "avocado", "cucumber", "soy-sauce", "sesame-oil", "sesame-seeds", "edamame", "mayo"],
+    ingredients: ["tuna-steak", "rice", "avocado", "cucumber", "soy-sauce", "sesame-oil", "sesame-seeds", "edamame", "mayo", "rice-vinegar"],
     instructions: [
       "Cook 1 cup sushi rice according to package. Season with rice vinegar, let cool.",
       "Cut 8 oz sashimi-grade ahi tuna into ½-inch cubes.",
@@ -6141,7 +6152,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Sweet and sour Sicilian eggplant stew",
     cookTime: "45 min",
     servings: 6,
-    ingredients: ["eggplant", "tomato", "onion", "celery", "olives", "capers", "vinegar", "sugar-white", "pine-nuts", "olive-oil", "salt"],
+    ingredients: ["eggplant", "tomato", "onion", "celery", "olives", "capers", "vinegar", "sugar-white", "pine-nuts", "olive-oil", "salt", "tomatoes"],
     instructions: [
       "Cut 2 large eggplants into 1-inch cubes. Salt heavily and drain in colander 30 minutes. Pat dry.",
       "Fry eggplant in batches in ¼ inch olive oil until golden. Drain on paper towels.",
@@ -6280,7 +6291,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Creamy buttermilk ranch with fresh herbs",
     cookTime: "10 min",
     servings: 10,
-    ingredients: ["sour-cream", "milk", "garlic", "dill", "parsley", "chives", "salt", "pepper", "worcestershire", "onion-powder", "mayonnaise"],
+    ingredients: ["sour-cream", "milk", "garlic", "dill", "parsley", "chives", "salt", "pepper", "worcestershire", "onion-powder", "mayonnaise", "garlic-powder", "buttermilk"],
     ingredientAmounts: [
       { id: "sour-cream", amount: "1", unit: "cup" },
       { id: "milk", amount: "0.5", unit: "cup" },
@@ -6290,6 +6301,8 @@ export const sampleRecipes: Recipe[] = [
       { id: "worcestershire", amount: "as needed", unit: "" },
       { id: "onion-powder", amount: "as needed", unit: "" },
       { id: "mayonnaise", amount: "as needed", unit: "" },
+      { id: "garlic-powder", amount: "as needed", unit: "" },
+      { id: "buttermilk", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Combine mayonnaise, sour cream, and buttermilk in a bowl. Whisk until smooth.",
@@ -6403,13 +6416,14 @@ export const sampleRecipes: Recipe[] = [
     description: "Silky smooth buttercream frosting perfect for cakes and cupcakes",
     cookTime: "15 min",
     servings: 24,
-    ingredients: ["butter", "powdered-sugar", "vanilla", "milk", "salt", "cream"],
+    ingredients: ["butter", "powdered-sugar", "vanilla", "milk", "salt", "cream", "vanilla-extract"],
     ingredientAmounts: [
       { id: "butter", amount: "1", unit: "cup" },
       { id: "powdered-sugar", amount: "4", unit: "cups" },
       { id: "vanilla", amount: "2", unit: "tsp" },
       { id: "milk", amount: "3", unit: "tbsp" },
       { id: "cream", amount: "as needed", unit: "" },
+      { id: "vanilla-extract", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Let 1 cup (2 sticks) butter soften at room temperature for 30 minutes until very soft.",
@@ -6430,13 +6444,14 @@ export const sampleRecipes: Recipe[] = [
     description: "Tangy and sweet frosting ideal for carrot cake and red velvet",
     cookTime: "10 min",
     servings: 16,
-    ingredients: ["cream-cheese", "butter", "powdered-sugar", "vanilla", "salt"],
+    ingredients: ["cream-cheese", "butter", "powdered-sugar", "vanilla", "salt", "vanilla-extract"],
     ingredientAmounts: [
       { id: "cream-cheese", amount: "8", unit: "oz" },
       { id: "butter", amount: "0.5", unit: "cup" },
       { id: "powdered-sugar", amount: "3", unit: "cups" },
       { id: "vanilla", amount: "1", unit: "tsp" },
       { id: "salt", amount: "to taste", unit: "" },
+      { id: "vanilla-extract", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Let cream cheese and butter soften at room temperature for 20-30 minutes.",
@@ -6757,7 +6772,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Jumbo lump crab cakes with Old Bay and minimal filler",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["crab-meat", "mayonnaise", "eggs", "mustard", "worcestershire-sauce", "bread", "old-bay", "parsley", "lemon", "salt", "pepper", "butter"],
+    ingredients: ["crab-meat", "mayonnaise", "eggs", "mustard", "worcestershire-sauce", "bread", "old-bay", "parsley", "lemon", "salt", "pepper", "butter", "breadcrumbs"],
     ingredientAmounts: [
       { id: "crab-meat", amount: "1", unit: "lb jumbo lump" },
       { id: "mayonnaise", amount: "0.25", unit: "cup" },
@@ -6771,6 +6786,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "salt", amount: "0.25", unit: "tsp" },
       { id: "pepper", amount: "0.25", unit: "tsp" },
       { id: "butter", amount: "3", unit: "tbsp" },
+      { id: "breadcrumbs", amount: "0.5", unit: "cup" },
     ],
     instructions: [
       "Gently pick through 1 lb jumbo lump crab meat, removing any shells. Be careful not to break up the large lumps.",
@@ -7073,7 +7089,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Tender chicken in garlic butter wine sauce over pasta",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["chicken", "pasta", "garlic", "butter", "lemon", "parsley", "olive-oil", "pepper", "white-wine", "salt"],
+    ingredients: ["chicken", "pasta", "garlic", "butter", "lemon", "parsley", "olive-oil", "pepper", "white-wine", "salt", "chicken-breast"],
     ingredientAmounts: [
       { id: "chicken", amount: "1.5", unit: "lbs breast, sliced" },
       { id: "pasta", amount: "12", unit: "oz linguine" },
@@ -7084,6 +7100,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "olive-oil", amount: "2", unit: "tbsp" },
       { id: "white-wine", amount: "0.5", unit: "cup" },
       { id: "salt", amount: "to taste", unit: "" },
+      { id: "chicken-breast", amount: "1.5", unit: "lbs" },
     ],
     instructions: [
       "Bring a large pot of salted water to boil. Cook 12 oz linguine until al dente. Reserve 1 cup pasta water before draining.",
@@ -7145,7 +7162,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Italian classic with chicken, prosciutto, and sage in white wine sauce",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["chicken", "prosciutto", "sage", "butter", "olive-oil", "white-wine", "flour", "salt", "pepper"],
+    ingredients: ["chicken", "prosciutto", "sage", "butter", "olive-oil", "white-wine", "flour", "salt", "pepper", "chicken-breast"],
     ingredientAmounts: [
       { id: "chicken", amount: "4", unit: "boneless breasts" },
       { id: "prosciutto", amount: "8", unit: "thin slices" },
@@ -7154,6 +7171,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "olive-oil", amount: "2", unit: "tbsp" },
       { id: "white-wine", amount: "0.75", unit: "cup" },
       { id: "flour", amount: "0.5", unit: "cup" },
+      { id: "chicken-breast", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Slice each chicken breast in half horizontally to create 8 thin cutlets. Pound to ¼-inch thickness.",
@@ -7246,10 +7264,11 @@ export const sampleRecipes: Recipe[] = [
     description: "Juicy chicken breast baked in zesty Italian dressing - just 2 ingredients!",
     cookTime: "35 min",
     servings: 4,
-    ingredients: ["chicken", "italian-dressing"],
+    ingredients: ["chicken", "italian-dressing", "chicken-breast"],
     ingredientAmounts: [
       { id: "chicken", amount: "4", unit: "breasts" },
       { id: "italian-dressing", amount: "1", unit: "cup" },
+      { id: "chicken-breast", amount: "4", unit: "" },
     ],
     instructions: [
       "Preheat your oven to 375°F (190°C). Lightly grease a 9x13 baking dish.",
@@ -7307,13 +7326,14 @@ export const sampleRecipes: Recipe[] = [
     description: "Tender pork chops baked in creamy mushroom sauce",
     cookTime: "50 min",
     servings: 4,
-    ingredients: ["pork", "cream-of-mushroom", "onion", "garlic-powder", "pepper", "salt"],
+    ingredients: ["pork", "cream-of-mushroom", "onion", "garlic-powder", "pepper", "salt", "pork-chops"],
     ingredientAmounts: [
       { id: "pork", amount: "4", unit: "bone-in chops" },
       { id: "cream-of-mushroom", amount: "2", unit: "cans (10.5 oz each)" },
       { id: "onion", amount: "1", unit: "sliced" },
       { id: "garlic-powder", amount: "1", unit: "tsp" },
       { id: "salt", amount: "to taste", unit: "" },
+      { id: "pork-chops", amount: "4", unit: "" },
     ],
     instructions: [
       "Preheat oven to 350°F (175°C). Spray a 9x13 baking dish with cooking spray.",
@@ -7373,13 +7393,14 @@ export const sampleRecipes: Recipe[] = [
     description: "No-mess BBQ chicken with corn and potatoes in foil",
     cookTime: "40 min",
     servings: 4,
-    ingredients: ["chicken", "bbq-sauce", "corn-on-cob", "russet-potato", "butter", "salt", "pepper"],
+    ingredients: ["chicken", "bbq-sauce", "corn-on-cob", "russet-potato", "butter", "salt", "pepper", "chicken-breast"],
     ingredientAmounts: [
       { id: "chicken", amount: "4", unit: "breasts" },
       { id: "bbq-sauce", amount: "1", unit: "cup" },
       { id: "corn-on-cob", amount: "2", unit: "ears, halved" },
       { id: "russet-potato", amount: "1", unit: "lb, sliced thin" },
       { id: "butter", amount: "4", unit: "tbsp" },
+      { id: "chicken-breast", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Preheat oven to 400°F (200°C) or prepare grill for medium-high heat.",
@@ -7441,7 +7462,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Zesty green salsa chicken - just dump and bake!",
     cookTime: "40 min",
     servings: 4,
-    ingredients: ["chicken", "salsa", "cheese", "cumin-ground", "lime", "pepper", "salt"],
+    ingredients: ["chicken", "salsa", "cheese", "cumin-ground", "lime", "pepper", "salt", "chicken-breast"],
     ingredientAmounts: [
       { id: "chicken", amount: "4", unit: "breasts" },
       { id: "salsa", amount: "2", unit: "cups salsa verde" },
@@ -7450,6 +7471,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "lime", amount: "1", unit: "juiced" },
       { id: "pepper", amount: "to taste", unit: "" },
       { id: "salt", amount: "to taste", unit: "" },
+      { id: "chicken-breast", amount: "4", unit: "" },
     ],
     instructions: [
       "Preheat oven to 375°F (190°C). Spray a 9x13 baking dish.",
@@ -7473,13 +7495,14 @@ export const sampleRecipes: Recipe[] = [
     description: "Sticky sweet and garlicky baked chicken thighs",
     cookTime: "45 min",
     servings: 4,
-    ingredients: ["chicken", "honey", "soy-sauce", "garlic", "olive-oil", "red-pepper-flakes"],
+    ingredients: ["chicken", "honey", "soy-sauce", "garlic", "olive-oil", "red-pepper-flakes", "chicken-thighs"],
     ingredientAmounts: [
       { id: "chicken", amount: "8", unit: "bone-in thighs" },
       { id: "honey", amount: "0.33", unit: "cup" },
       { id: "soy-sauce", amount: "0.25", unit: "cup" },
       { id: "garlic", amount: "6", unit: "cloves minced" },
       { id: "olive-oil", amount: "2", unit: "tbsp" },
+      { id: "chicken-thighs", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Preheat oven to 400°F (200°C).",
@@ -8081,7 +8104,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Classic Mexican layered dip with all the fixings",
     cookTime: "20 min",
     servings: 12,
-    ingredients: ["beans", "sour-cream", "guacamole", "cheese", "salsa", "tomato", "green-onion", "olives", "taco-seasoning"],
+    ingredients: ["beans", "sour-cream", "guacamole", "cheese", "salsa", "tomato", "green-onion", "olives", "taco-seasoning", "tomatoes"],
     instructions: [
       "Spread refried beans in bottom of 9x13 dish.",
       "Layer sour cream (mix with taco seasoning if desired).",
@@ -8172,7 +8195,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Fresh tomato topping on crispy garlic toast",
     cookTime: "15 min",
     servings: 8,
-    ingredients: ["bread", "tomato", "basil", "garlic", "olive-oil", "balsamic-vinegar", "salt", "pepper"],
+    ingredients: ["bread", "tomato", "basil", "garlic", "olive-oil", "balsamic-vinegar", "salt", "pepper", "tomatoes"],
     ingredientAmounts: [
       { id: "bread", amount: "1", unit: "baguette, sliced" },
       { id: "tomato", amount: "4", unit: "medium, diced" },
@@ -8180,6 +8203,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "garlic", amount: "3", unit: "cloves" },
       { id: "olive-oil", amount: "4", unit: "tbsp divided" },
       { id: "pepper", amount: "to taste", unit: "" },
+      { id: "tomatoes", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Slice baguette into 1/2-inch thick rounds. Brush with olive oil.",
@@ -8206,13 +8230,14 @@ export const sampleRecipes: Recipe[] = [
     description: "Creamy cheese balls rolled in crunchy toppings",
     cookTime: "20 min",
     servings: 16,
-    ingredients: ["cream-cheese", "cheese", "green-onion", "walnuts", "garlic-powder", "worcestershire", "cheddar"],
+    ingredients: ["cream-cheese", "cheese", "green-onion", "walnuts", "garlic-powder", "worcestershire", "cheddar", "worcestershire-sauce"],
     ingredientAmounts: [
       { id: "cream-cheese", amount: "16", unit: "oz softened" },
       { id: "cheese", amount: "2", unit: "cups shredded sharp cheddar" },
       { id: "green-onion", amount: "4", unit: "stalks, finely chopped" },
       { id: "walnuts", amount: "1", unit: "cup finely chopped" },
       { id: "cheddar", amount: "as needed", unit: "" },
+      { id: "worcestershire-sauce", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Beat cream cheese until smooth in a large bowl.",
@@ -8406,7 +8431,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Pan-seared pork chops with sweet apple cider glaze",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["pork", "apple-cider", "apple", "onion", "butter", "thyme", "dijon-mustard", "pepper", "salt", "oil"],
+    ingredients: ["pork", "apple-cider", "apple", "onion", "butter", "thyme", "dijon-mustard", "pepper", "salt", "oil", "pork-chops"],
     instructions: [
       "Season thick-cut pork chops with salt and pepper.",
       "Sear in a hot skillet with oil 4 minutes per side. Remove and set aside.",
@@ -8498,7 +8523,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Elegant one-pan dinner ready in 25 minutes",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["salmon", "asparagus", "lemon", "garlic", "olive-oil", "dill", "butter", "pepper", "salt"],
+    ingredients: ["salmon", "asparagus", "lemon", "garlic", "olive-oil", "dill", "butter", "pepper", "salt", "salmon-fillet"],
     ingredientAmounts: [
       { id: "salmon", amount: "4", unit: "fillets (6 oz each)" },
       { id: "asparagus", amount: "1", unit: "lb trimmed" },
@@ -8506,6 +8531,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "garlic", amount: "4", unit: "cloves minced" },
       { id: "pepper", amount: "to taste", unit: "" },
       { id: "salt", amount: "to taste", unit: "" },
+      { id: "salmon-fillet", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Preheat oven to 400°F. Line sheet pan with foil.",
@@ -8846,7 +8872,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Pan-seared chicken in a rich sun-dried tomato and spinach cream sauce",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["chicken", "sun-dried-tomatoes", "spinach", "cream", "parmesan", "garlic", "Italian-seasoning", "olive-oil", "italian-seasoning", "pepper", "salt"],
+    ingredients: ["chicken", "sun-dried-tomatoes", "spinach", "cream", "parmesan", "garlic", "Italian-seasoning", "olive-oil", "italian-seasoning", "pepper", "salt", "chicken-breast"],
     ingredientAmounts: [
       { id: "chicken", amount: "4", unit: "breasts, pounded thin" },
       { id: "sun-dried-tomatoes", amount: "0.5", unit: "cup, chopped" },
@@ -8857,6 +8883,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "italian-seasoning", amount: "as needed", unit: "" },
       { id: "pepper", amount: "to taste", unit: "" },
       { id: "salt", amount: "to taste", unit: "" },
+      { id: "chicken-breast", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Season chicken breasts with Italian seasoning, salt, and pepper on both sides.",
@@ -8984,7 +9011,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Crispy tortilla chips loaded with seasoned beef, cheese, and all the toppings",
     cookTime: "25 min",
     servings: 6,
-    ingredients: ["tortilla-chips", "ground-beef", "cheese", "beans", "sour-cream", "guacamole", "salsa", "jalapeno", "tomato", "onion", "taco-seasoning", "black-beans"],
+    ingredients: ["tortilla-chips", "ground-beef", "cheese", "beans", "sour-cream", "guacamole", "salsa", "jalapeno", "tomato", "onion", "taco-seasoning", "black-beans", "tomatoes"],
     ingredientAmounts: [
       { id: "tortilla-chips", amount: "12", unit: "oz bag" },
       { id: "ground-beef", amount: "1", unit: "lb" },
@@ -8994,6 +9021,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "guacamole", amount: "1", unit: "cup" },
       { id: "taco-seasoning", amount: "as needed", unit: "" },
       { id: "black-beans", amount: "as needed", unit: "" },
+      { id: "tomatoes", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Preheat oven to 375°F. Spread chips on a large oven-safe platter or sheet pan.",
@@ -9083,7 +9111,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Creamy, tangy Caesar dressing with real parmesan and anchovy depth",
     cookTime: "10 min",
     servings: 8,
-    ingredients: ["mayonnaise", "parmesan", "garlic", "lemon", "anchovy", "dijon-mustard", "worcestershire", "olive-oil", "pepper", "salt"],
+    ingredients: ["mayonnaise", "parmesan", "garlic", "lemon", "anchovy", "dijon-mustard", "worcestershire", "olive-oil", "pepper", "salt", "worcestershire-sauce"],
     ingredientAmounts: [
       { id: "mayonnaise", amount: "0.75", unit: "cup" },
       { id: "parmesan", amount: "0.5", unit: "cup, finely grated" },
@@ -9093,6 +9121,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "dijon-mustard", amount: "1", unit: "tsp" },
       { id: "pepper", amount: "to taste", unit: "" },
       { id: "salt", amount: "to taste", unit: "" },
+      { id: "worcestershire-sauce", amount: "as needed", unit: "" },
     ],
     instructions: [
       "In a mixing bowl, mash anchovy fillets with minced garlic into a paste using the back of a fork.",
@@ -9126,7 +9155,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Cool, creamy ranch with fresh herbs and buttermilk tang",
     cookTime: "10 min",
     servings: 12,
-    ingredients: ["mayonnaise", "sour-cream", "buttermilk", "garlic", "dill", "parsley", "chives", "onion-powder", "pepper", "lemon", "salt"],
+    ingredients: ["mayonnaise", "sour-cream", "buttermilk", "garlic", "dill", "parsley", "chives", "onion-powder", "pepper", "lemon", "salt", "garlic-powder"],
     ingredientAmounts: [
       { id: "mayonnaise", amount: "0.5", unit: "cup" },
       { id: "sour-cream", amount: "0.5", unit: "cup" },
@@ -9137,6 +9166,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "pepper", amount: "to taste", unit: "" },
       { id: "lemon", amount: "as needed", unit: "" },
       { id: "salt", amount: "to taste", unit: "" },
+      { id: "garlic-powder", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Combine mayonnaise and sour cream in a bowl. Whisk until smooth.",
@@ -9213,7 +9243,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Sweet and tangy honey mustard perfect for salads or dipping",
     cookTime: "5 min",
     servings: 8,
-    ingredients: ["honey", "dijon-mustard", "mayonnaise", "lemon", "garlic", "apple-cider-vinegar", "pepper", "salt"],
+    ingredients: ["honey", "dijon-mustard", "mayonnaise", "lemon", "garlic", "apple-cider-vinegar", "pepper", "salt", "garlic-powder"],
     ingredientAmounts: [
       { id: "honey", amount: "3", unit: "tbsp" },
       { id: "dijon-mustard", amount: "3", unit: "tbsp" },
@@ -9222,6 +9252,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "apple-cider-vinegar", amount: "as needed", unit: "" },
       { id: "pepper", amount: "to taste", unit: "" },
       { id: "salt", amount: "to taste", unit: "" },
+      { id: "garlic-powder", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Whisk together honey and Dijon mustard in a small bowl until smooth.",
@@ -9314,12 +9345,13 @@ export const sampleRecipes: Recipe[] = [
     description: "Silky smooth vanilla buttercream for cakes and cupcakes",
     cookTime: "10 min",
     servings: 24,
-    ingredients: ["butter", "powdered-sugar", "vanilla", "cream", "salt"],
+    ingredients: ["butter", "powdered-sugar", "vanilla", "cream", "salt", "vanilla-extract"],
     ingredientAmounts: [
       { id: "butter", amount: "1", unit: "cup (2 sticks), softened" },
       { id: "powdered-sugar", amount: "4", unit: "cups, sifted" },
       { id: "vanilla", amount: "2", unit: "tsp" },
       { id: "cream", amount: "3", unit: "tbsp" },
+      { id: "vanilla-extract", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Beat softened butter with an electric mixer on medium-high for 3-4 minutes until pale and fluffy.",
@@ -9370,13 +9402,14 @@ export const sampleRecipes: Recipe[] = [
     description: "Tangy, sweet cream cheese frosting perfect for carrot cake or red velvet",
     cookTime: "10 min",
     servings: 16,
-    ingredients: ["cream-cheese", "butter", "powdered-sugar", "vanilla", "salt"],
+    ingredients: ["cream-cheese", "butter", "powdered-sugar", "vanilla", "salt", "vanilla-extract"],
     ingredientAmounts: [
       { id: "cream-cheese", amount: "8", unit: "oz, softened" },
       { id: "butter", amount: "0.5", unit: "cup, softened" },
       { id: "powdered-sugar", amount: "3", unit: "cups, sifted" },
       { id: "vanilla", amount: "1", unit: "tsp" },
       { id: "salt", amount: "to taste", unit: "" },
+      { id: "vanilla-extract", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Beat softened cream cheese and butter together until smooth and creamy, about 2 minutes.",
@@ -9459,7 +9492,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Protein-packed Mediterranean salad with grilled chicken",
     cookTime: "20 min",
     servings: 2,
-    ingredients: ["chicken", "lettuce", "cucumber", "tomato", "feta", "olives", "red-onion", "olive-oil", "lemon", "oregano", "pepper", "salt"],
+    ingredients: ["chicken", "lettuce", "cucumber", "tomato", "feta", "olives", "red-onion", "olive-oil", "lemon", "oregano", "pepper", "salt", "tomatoes"],
     ingredientAmounts: [
       { id: "chicken", amount: "2", unit: "breasts" },
       { id: "lettuce", amount: "6", unit: "cups romaine" },
@@ -9467,6 +9500,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "feta", amount: "0.5", unit: "cup crumbled" },
       { id: "pepper", amount: "to taste", unit: "" },
       { id: "salt", amount: "to taste", unit: "" },
+      { id: "tomatoes", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Season chicken with olive oil, lemon juice, oregano, salt and pepper.",
@@ -11225,7 +11259,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Colorful Texas caviar with black-eyed peas and corn",
     cookTime: "20 min",
     servings: 10,
-    ingredients: ["beans-black", "corn", "bell-pepper", "tomato", "onion", "cilantro", "jalapeno", "lime", "olive-oil", "black-beans", "peas"],
+    ingredients: ["beans-black", "corn", "bell-pepper", "tomato", "onion", "cilantro", "jalapeno", "lime", "olive-oil", "black-beans", "peas", "tomatoes"],
     ingredientAmounts: [
       { id: "beans-black", amount: "1", unit: "can drained" },
       { id: "corn", amount: "1", unit: "can drained" },
@@ -11233,6 +11267,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "tomato", amount: "2", unit: "cups diced" },
       { id: "black-beans", amount: "as needed", unit: "" },
       { id: "peas", amount: "as needed", unit: "" },
+      { id: "tomatoes", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Drain and rinse black beans and black-eyed peas.",
@@ -11305,7 +11340,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Fresh and zesty salsa perfect for chips or tacos",
     cookTime: "15 min",
     servings: 8,
-    ingredients: ["beans-black", "corn", "tomato", "onion", "cilantro", "lime", "jalapeno", "cumin", "black-beans", "salt"],
+    ingredients: ["beans-black", "corn", "tomato", "onion", "cilantro", "lime", "jalapeno", "cumin", "black-beans", "salt", "tomatoes"],
     ingredientAmounts: [
       { id: "beans-black", amount: "1", unit: "can drained" },
       { id: "corn", amount: "1.5", unit: "cups" },
@@ -11313,6 +11348,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "lime", amount: "3", unit: "juiced" },
       { id: "black-beans", amount: "as needed", unit: "" },
       { id: "salt", amount: "to taste", unit: "" },
+      { id: "tomatoes", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Drain and rinse black beans thoroughly.",
@@ -11346,7 +11382,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Fresh tomato topping on crispy garlic toast",
     cookTime: "15 min",
     servings: 8,
-    ingredients: ["tomato", "garlic", "basil", "olive-oil", "balsamic-vinegar", "bread", "pepper", "salt"],
+    ingredients: ["tomato", "garlic", "basil", "olive-oil", "balsamic-vinegar", "bread", "pepper", "salt", "tomatoes"],
     ingredientAmounts: [
       { id: "tomato", amount: "4", unit: "cups diced" },
       { id: "garlic", amount: "4", unit: "cloves" },
@@ -11354,6 +11390,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "bread", amount: "1", unit: "baguette" },
       { id: "pepper", amount: "to taste", unit: "" },
       { id: "salt", amount: "to taste", unit: "" },
+      { id: "tomatoes", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Dice tomatoes and drain excess liquid.",
@@ -12277,11 +12314,12 @@ export const sampleRecipes: Recipe[] = [
     description: "Sweet and tangy party meatballs everyone loves",
     cookTime: "30 min",
     servings: 10,
-    ingredients: ["meatballs", "grape-jelly", "chili-sauce", "worcestershire"],
+    ingredients: ["meatballs", "grape-jelly", "chili-sauce", "worcestershire", "worcestershire-sauce"],
     ingredientAmounts: [
       { id: "meatballs", amount: "2", unit: "lbs frozen" },
       { id: "grape-jelly", amount: "1", unit: "cup" },
       { id: "chili-sauce", amount: "1", unit: "cup" },
+      { id: "worcestershire-sauce", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Combine grape jelly and chili sauce in slow cooker or pot.",
@@ -12725,11 +12763,12 @@ export const sampleRecipes: Recipe[] = [
     description: "North African eggs poached in spiced tomato sauce",
     cookTime: "30 min",
     servings: 4,
-    ingredients: ["eggs", "tomato", "onion", "bell-pepper", "garlic", "cumin", "paprika", "olive-oil", "feta"],
+    ingredients: ["eggs", "tomato", "onion", "bell-pepper", "garlic", "cumin", "paprika", "olive-oil", "feta", "tomatoes"],
     ingredientAmounts: [
       { id: "eggs", amount: "6", unit: "large" },
       { id: "tomato", amount: "28", unit: "oz crushed" },
       { id: "onion", amount: "1", unit: "medium" },
+      { id: "tomatoes", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Heat olive oil in large skillet over medium heat. Add diced onion and cook 5 minutes.",
@@ -12839,13 +12878,14 @@ export const sampleRecipes: Recipe[] = [
     description: "Fresh vegetables with feta and olives",
     cookTime: "10 min",
     servings: 4,
-    ingredients: ["tomato", "cucumber", "onion", "olives", "feta", "olive-oil", "oregano", "pepper", "salt"],
+    ingredients: ["tomato", "cucumber", "onion", "olives", "feta", "olive-oil", "oregano", "pepper", "salt", "tomatoes"],
     ingredientAmounts: [
       { id: "tomato", amount: "4", unit: "large ripe" },
       { id: "cucumber", amount: "1", unit: "large" },
       { id: "feta", amount: "8", unit: "oz block" },
       { id: "pepper", amount: "to taste", unit: "" },
       { id: "salt", amount: "to taste", unit: "" },
+      { id: "tomatoes", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Cut tomatoes into large wedges. Slice cucumber into half moons.",
@@ -12868,11 +12908,12 @@ export const sampleRecipes: Recipe[] = [
     description: "Rich broth with noodles and soft-boiled egg",
     cookTime: "45 min",
     servings: 2,
-    ingredients: ["ramen-noodles", "eggs", "chicken", "green-onions", "soy-sauce", "ginger", "garlic", "sesame-oil"],
+    ingredients: ["ramen-noodles", "eggs", "chicken", "green-onions", "soy-sauce", "ginger", "garlic", "sesame-oil", "chicken-broth"],
     ingredientAmounts: [
       { id: "ramen-noodles", amount: "2", unit: "portions" },
       { id: "eggs", amount: "2", unit: "large" },
       { id: "chicken", amount: "4", unit: "cups broth" },
+      { id: "chicken-broth", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Simmer chicken broth with sliced ginger and garlic for 20 minutes.",
@@ -13375,7 +13416,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Fresh salad with grilled chicken, feta, olives, and lemon vinaigrette",
     cookTime: "25 min",
     servings: 2,
-    ingredients: ["chicken-breast", "mixed-greens", "cucumber", "tomatoes", "red-onion", "feta", "olives", "lemon", "olive-oil", "oregano", "pepper", "garlic", "salt"],
+    ingredients: ["chicken-breast", "mixed-greens", "cucumber", "tomatoes", "red-onion", "feta", "olives", "lemon", "olive-oil", "oregano", "pepper", "garlic", "salt", "feta-cheese"],
     ingredientAmounts: [
       { id: "chicken-breast", amount: "2", unit: "medium" },
       { id: "mixed-greens", amount: "6", unit: "cups" },
@@ -13384,6 +13425,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "pepper", amount: "to taste", unit: "" },
       { id: "garlic", amount: "as needed", unit: "" },
       { id: "salt", amount: "to taste", unit: "" },
+      { id: "feta-cheese", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Season chicken breasts with salt, pepper, and dried oregano.",
@@ -13680,13 +13722,14 @@ export const sampleRecipes: Recipe[] = [
     description: "Creamy make-ahead breakfast rich in omega-3s and fiber",
     cookTime: "5 min + overnight",
     servings: 2,
-    ingredients: ["chia-seeds", "almond-milk", "maple-syrup", "vanilla", "berries", "coconut"],
+    ingredients: ["chia-seeds", "almond-milk", "maple-syrup", "vanilla", "berries", "coconut", "vanilla-extract"],
     ingredientAmounts: [
       { id: "chia-seeds", amount: "0.25", unit: "cup" },
       { id: "almond-milk", amount: "1", unit: "cup" },
       { id: "maple-syrup", amount: "1", unit: "tbsp" },
       { id: "berries", amount: "0.5", unit: "cup" },
       { id: "coconut", amount: "as needed", unit: "" },
+      { id: "vanilla-extract", amount: "as needed", unit: "" },
     ],
     instructions: [
       "In a jar or container, combine chia seeds, almond milk, maple syrup, and vanilla extract.",
@@ -13769,7 +13812,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Protein-packed bowl with grilled chicken and Mediterranean toppings",
     cookTime: "25 min",
     servings: 2,
-    ingredients: ["chicken-breast", "quinoa", "cucumber", "tomatoes", "red-onion", "feta", "olives", "hummus", "lemon", "oregano", "olive-oil", "pepper", "salt"],
+    ingredients: ["chicken-breast", "quinoa", "cucumber", "tomatoes", "red-onion", "feta", "olives", "hummus", "lemon", "oregano", "olive-oil", "pepper", "salt", "feta-cheese"],
     ingredientAmounts: [
       { id: "chicken-breast", amount: "2", unit: "medium" },
       { id: "quinoa", amount: "1", unit: "cup cooked" },
@@ -13778,6 +13821,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "olive-oil", amount: "as needed", unit: "" },
       { id: "pepper", amount: "to taste", unit: "" },
       { id: "salt", amount: "to taste", unit: "" },
+      { id: "feta-cheese", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Season chicken with oregano, salt, pepper, and lemon juice. Grill 6-7 minutes per side until cooked through.",
@@ -15832,12 +15876,13 @@ export const sampleRecipes: Recipe[] = [
     description: "Bold, tangy butter that elevates any steak to steakhouse quality",
     cookTime: "10 min",
     servings: 8,
-    ingredients: ["butter", "blue-cheese", "chives", "pepper", "worcestershire"],
+    ingredients: ["butter", "blue-cheese", "chives", "pepper", "worcestershire", "worcestershire-sauce"],
     ingredientAmounts: [
       { id: "butter", amount: "1", unit: "stick softened" },
       { id: "blue-cheese", amount: "0.25", unit: "cup crumbled" },
       { id: "chives", amount: "1", unit: "tbsp minced" },
       { id: "worcestershire", amount: "0.5", unit: "tsp" },
+      { id: "worcestershire-sauce", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Crumble blue cheese (gorgonzola or roquefort work great).",
@@ -16032,7 +16077,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Crispy baked chicken nuggets way better than fast food",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["chicken-breast", "bread", "eggs", "garlic-powder", "paprika", "salt", "flour"],
+    ingredients: ["chicken-breast", "bread", "eggs", "garlic-powder", "paprika", "salt", "flour", "breadcrumbs"],
     ingredientAmounts: [
       { id: "chicken-breast", amount: "1.5", unit: "lbs" },
       { id: "bread", amount: "1.5", unit: "cups breadcrumbs" },
@@ -16040,6 +16085,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "garlic-powder", amount: "1", unit: "tsp" },
       { id: "paprika", amount: "0.5", unit: "tsp" },
       { id: "flour", amount: "as needed", unit: "" },
+      { id: "breadcrumbs", amount: "as needed", unit: "" },
     ],
     keyIngredients: ["chicken-breast"],
     instructions: [
@@ -16604,7 +16650,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Omega-3 rich salmon over fluffy quinoa with fresh herbs and vegetables",
     cookTime: "25 min",
     servings: 2,
-    ingredients: ["salmon", "quinoa", "lemon", "olive-oil", "garlic", "spinach", "cherry-tomatoes", "pepper", "salt"],
+    ingredients: ["salmon", "quinoa", "lemon", "olive-oil", "garlic", "spinach", "cherry-tomatoes", "pepper", "salt", "salmon-fillet"],
     ingredientAmounts: [
       { id: "salmon", amount: "2", unit: "fillets" },
       { id: "quinoa", amount: "1", unit: "cup" },
@@ -16615,6 +16661,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "cherry-tomatoes", amount: "1", unit: "cup" },
       { id: "pepper", amount: "to taste", unit: "" },
       { id: "salt", amount: "to taste", unit: "" },
+      { id: "salmon-fillet", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Rinse 1 cup quinoa and cook in 2 cups water for 15 minutes until fluffy. Fluff with a fork.",
@@ -17062,7 +17109,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Omega-3 packed salmon with a crunchy walnut-herb crust baked to perfection",
     cookTime: "25 min",
     servings: 4,
-    ingredients: ["salmon", "walnuts", "lemon", "garlic", "olive-oil", "parsley", "salt", "pepper"],
+    ingredients: ["salmon", "walnuts", "lemon", "garlic", "olive-oil", "parsley", "salt", "pepper", "salmon-fillet"],
     ingredientAmounts: [
       { id: "salmon", amount: "4", unit: "fillets (6 oz each)" },
       { id: "walnuts", amount: "0.75", unit: "cup finely chopped" },
@@ -17072,6 +17119,7 @@ export const sampleRecipes: Recipe[] = [
       { id: "parsley", amount: "3", unit: "tbsp chopped" },
       { id: "salt", amount: "0.5", unit: "tsp" },
       { id: "pepper", amount: "0.25", unit: "tsp" },
+      { id: "salmon-fillet", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Preheat oven to 400°F. Line a baking sheet with parchment paper.",
@@ -17750,7 +17798,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Restaurant-style Mexican rice with tomato and cumin",
     cookTime: "30 min",
     servings: 6,
-    ingredients: ["rice", "tomato", "onion", "garlic", "cumin", "chicken-broth", "oil", "salt"],
+    ingredients: ["rice", "tomato", "onion", "garlic", "cumin", "chicken-broth", "oil", "salt", "tomatoes"],
     instructions: [
       "Toast 1.5 cups rice in oil over medium heat until golden, about 5 minutes.",
       "Add diced onion and garlic, cook 2 minutes.",
@@ -18543,12 +18591,13 @@ export const sampleRecipes: Recipe[] = [
     description: "Toasted baguette topped with fresh mozzarella, tomatoes, basil, and balsamic",
     cookTime: "15 min",
     servings: 8,
-    ingredients: ["baguette", "mozzarella-fresh", "tomato", "basil", "balsamic-vinegar", "olive-oil", "garlic", "salt"],
+    ingredients: ["baguette", "mozzarella-fresh", "tomato", "basil", "balsamic-vinegar", "olive-oil", "garlic", "salt", "tomatoes"],
     ingredientAmounts: [
       { id: "baguette", amount: "1", unit: "sliced" },
       { id: "mozzarella-fresh", amount: "8", unit: "oz sliced" },
       { id: "tomato", amount: "3", unit: "medium, diced" },
       { id: "basil", amount: "1/4", unit: "cup chiffonade" },
+      { id: "tomatoes", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Slice baguette diagonally, brush with olive oil. Toast at 400°F for 5 minutes.",

@@ -35,7 +35,7 @@ export const pairingRecipes: Recipe[] = [
     description: "Simple spring greens with cucumber, tomatoes, and a lemon-Dijon vinaigrette",
     cookTime: "10 min",
     servings: 4,
-    ingredients: ["mixed-greens", "cucumber", "tomato", "onion", "olive-oil", "lemon", "mustard", "salt", "dijon"],
+    ingredients: ["mixed-greens", "cucumber", "tomato", "onion", "olive-oil", "lemon", "mustard", "salt", "dijon", "tomatoes"],
     ingredientAmounts: [
       { id: "mixed-greens", amount: "6", unit: "cups" },
       { id: "cucumber", amount: "1", unit: "sliced" },
@@ -46,6 +46,7 @@ export const pairingRecipes: Recipe[] = [
       { id: "mustard", amount: "1", unit: "tsp Dijon" },
       { id: "salt", amount: "0.25", unit: "tsp" },
       { id: "dijon", amount: "as needed", unit: "" },
+      { id: "tomatoes", amount: "as needed", unit: "" },
     ],
     instructions: [
       "Whisk olive oil, lemon juice, Dijon, and salt in a small bowl until emulsified.",
