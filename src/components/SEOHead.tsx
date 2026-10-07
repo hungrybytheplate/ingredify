@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { sampleRecipes } from "@/data/recipes";
+import { recipePath } from "@/lib/recipeSlug";
 
 interface SEOHeadProps {
   title?: string;
@@ -42,7 +43,7 @@ export function SEOHead({
     if (ogDescription) ogDescription.setAttribute("content", description);
     
     const ogUrl = document.querySelector('meta[property="og:url"]');
-    if (ogUrl) ogUrl.setAttribute("href", `https://ingredify.org${canonicalPath}`);
+    if (ogUrl) ogUrl.setAttribute("content", `https://ingredify.org${canonicalPath}`);
     
     // Update Twitter tags
     const twitterTitle = document.querySelector('meta[name="twitter:title"]');
@@ -143,7 +144,7 @@ export function generateRecipeCollectionSchema() {
       "item": {
         "@type": "Recipe",
         "name": recipe.title,
-        "url": `https://ingredify.org/?recipe=${recipe.id}`,
+        "url": `https://ingredify.org${recipePath(recipe)}`,
         "image": "https://ingredify.org/og-image.png",
         "author": {
           "@type": "Organization",

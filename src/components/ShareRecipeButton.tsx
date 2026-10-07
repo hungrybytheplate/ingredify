@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { recipePath } from "@/lib/recipeSlug";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -28,7 +29,7 @@ export function ShareRecipeButton({ recipe, variant = "ghost", size = "sm", clas
   
   const getShareUrl = () => {
     const baseUrl = window.location.origin;
-    return `${baseUrl}?recipe=${recipe.id}`;
+    return `${baseUrl}${recipePath(recipe)}`;
   };
   
   const getShareText = () => {
