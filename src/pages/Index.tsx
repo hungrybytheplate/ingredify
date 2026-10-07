@@ -861,6 +861,31 @@ const Index = () => {
             {appMode === "cook" ? (
               // COOK MODE
             <div className="grid gap-4 lg:grid-cols-2">
+                {isMobile && selectedIngredients.length === 0 && !showRecipes && (
+                  <div className="rounded-2xl border border-border/50 bg-card p-4 shadow-soft lg:col-span-2">
+                    <p className="font-serif text-xl font-semibold text-foreground">Tap what's in your fridge</p>
+                    <p className="text-sm text-muted-foreground mt-1">Pick a few, then tap Find Recipes. We'll show what you can make.</p>
+                    <div className="flex flex-wrap gap-2 mt-3">
+                      {[
+                        { id: "eggs", label: "🥚 Eggs" },
+                        { id: "chicken-breast", label: "🍗 Chicken" },
+                        { id: "ground-beef", label: "🥩 Ground beef" },
+                        { id: "rice-white", label: "🍚 Rice" },
+                        { id: "pasta-spaghetti", label: "🍝 Pasta" },
+                        { id: "russet-potato", label: "🥔 Potatoes" },
+                      ].map((q) => (
+                        <button
+                          key={q.id}
+                          type="button"
+                          onClick={() => handleToggleIngredient(q.id)}
+                          className="min-h-10 px-4 rounded-full border border-border bg-background text-sm font-medium text-foreground active:scale-95 transition-transform"
+                        >
+                          {q.label}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
                 <Card className="shadow-elevated border-border/50 bg-card/90 backdrop-blur-sm overflow-hidden" data-tour="ingredients">
                   <div className="absolute top-0 left-0 w-full h-1 gradient-warm" />
                   <CardHeader className="pb-4">
