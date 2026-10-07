@@ -82,7 +82,7 @@ export function CookingMode({ recipe, open, onClose, servingMultiplier = 1 }: Co
   const [completedSteps, setCompletedSteps] = useState<number[]>([]);
   const [activeTimer, setActiveTimer] = useState<{ seconds: number; isRunning: boolean; label: string } | null>(null);
   const [showIngredients, setShowIngredients] = useState(false);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   
   const extractedTimers = extractTimersFromInstructions(recipe.instructions);

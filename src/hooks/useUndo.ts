@@ -12,7 +12,7 @@ const UNDO_TIMEOUT = 5000; // 5 seconds
 
 export function useUndo() {
   const [pendingAction, setPendingAction] = useState<UndoAction | null>(null);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const clearTimeout = useCallback(() => {
     if (timeoutRef.current) {
