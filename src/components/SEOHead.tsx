@@ -42,8 +42,13 @@ export function SEOHead({
     const ogDescription = document.querySelector('meta[property="og:description"]');
     if (ogDescription) ogDescription.setAttribute("content", description);
     
-    const ogUrl = document.querySelector('meta[property="og:url"]');
-    if (ogUrl) ogUrl.setAttribute("content", `https://ingredify.org${canonicalPath}`);
+    let ogUrl = document.querySelector('meta[property="og:url"]');
+    if (!ogUrl) {
+      ogUrl = document.createElement("meta");
+      ogUrl.setAttribute("property", "og:url");
+      document.head.appendChild(ogUrl);
+    }
+    ogUrl.setAttribute("content", `https://ingredify.org${canonicalPath}`);
     
     // Update Twitter tags
     const twitterTitle = document.querySelector('meta[name="twitter:title"]');
