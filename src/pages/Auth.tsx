@@ -195,7 +195,7 @@ export default function Auth() {
             <div className="mx-auto w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center">
               <Leaf className="h-7 w-7 text-primary" />
             </div>
-            <CardTitle className="text-2xl font-display font-semibold text-foreground">Reset Password</CardTitle>
+            <h1 className="text-2xl font-display font-semibold text-foreground">Reset Password</h1>
             <CardDescription className="text-muted-foreground">
               Enter your email and we'll send you a reset link
             </CardDescription>
@@ -260,7 +260,7 @@ export default function Auth() {
             <div className="mx-auto w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center">
               <Leaf className="h-7 w-7 text-primary" />
             </div>
-            <CardTitle className="text-2xl font-display font-semibold text-foreground">Set New Password</CardTitle>
+            <h1 className="text-2xl font-display font-semibold text-foreground">Set New Password</h1>
             <CardDescription className="text-muted-foreground">
               Enter your new password below
             </CardDescription>
@@ -353,7 +353,7 @@ export default function Auth() {
           <div className="mx-auto w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center">
             <Leaf className="h-7 w-7 text-primary" />
           </div>
-          <CardTitle className="text-2xl font-display font-semibold text-foreground">Ingredify</CardTitle>
+          <h1 className="text-2xl font-display font-semibold text-foreground">Ingredify</h1>
           <CardDescription className="text-muted-foreground">
             Sign in to sync your recipes, meal plans, and shopping list across devices
           </CardDescription>

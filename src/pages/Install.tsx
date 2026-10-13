@@ -64,7 +64,7 @@ export default function Install() {
           <div className="mx-auto p-4 rounded-2xl gradient-warm shadow-warm w-fit">
             <UtensilsCrossed className="h-10 w-10 text-primary-foreground" />
           </div>
-          <CardTitle className="font-serif text-2xl">Install Ingredify</CardTitle>
+          <h1 className="font-serif text-2xl">Install Ingredify</h1>
           <CardDescription>
             Add Ingredify to your home screen for quick access and an app-like experience
           </CardDescription>
