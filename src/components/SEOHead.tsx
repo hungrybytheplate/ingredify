@@ -30,10 +30,13 @@ export function SEOHead({
     }
     
     // Update canonical URL
-    const canonical = document.querySelector('link[rel="canonical"]');
-    if (canonical) {
-      canonical.setAttribute("href", `https://ingredify.org${canonicalPath}`);
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
     }
+    canonical.setAttribute("href", `https://ingredify.org${canonicalPath}`);
     
     // Update OG tags
     const ogTitle = document.querySelector('meta[property="og:title"]');
