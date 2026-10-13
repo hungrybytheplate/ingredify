@@ -8,7 +8,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { UserPreferencesDialog } from "@/components/UserPreferencesDialog";
 import { SyncIndicator } from "@/components/SyncIndicator";
 import { useAuth } from "@/hooks/useAuth";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { toast } from "@/hooks/use-toast";
 import { motion } from "framer-motion";
 
@@ -19,6 +19,8 @@ interface HeaderProps {
 export function Header({ onShowTour }: HeaderProps) {
   const { user, signOut, loading } = useAuth();
   const navigate = useNavigate();
+  const isHome = useLocation().pathname === "/";
+  const SiteTitle = isHome ? "h1" : "div";
 
   const handleSignOut = async () => {
     await signOut();
@@ -67,9 +69,10 @@ export function Header({ onShowTour }: HeaderProps) {
             />
           </motion.div>
           <div className="min-w-0 hidden sm:block">
-            <h1 className="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-foreground tracking-tight truncate">
+            <SiteTitle className="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-foreground tracking-tight truncate">
               Ingredify
-            </h1>
+              {isHome && <span className="sr-only"> — Personal recipe finder and meal planner</span>}
+            </SiteTitle>
             <p className="text-xs sm:text-sm text-muted-foreground font-medium">
               See what's possible
             </p>
