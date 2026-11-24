@@ -369,12 +369,18 @@ const Index = () => {
 
   // Mode switching (Cook vs Drink)
   const [appMode, setAppMode] = useState<"cook" | "drink">("cook");
+  const [showHolidayDrinks, setShowHolidayDrinks] = useState(false);
   // Open the drinks section from links like /?mode=drink (e.g. drink pages)
   useEffect(() => {
     if (searchParams.get("mode") === "drink") {
       setAppMode("drink");
+      if (searchParams.get("holiday") === "1") {
+        setShowHolidayDrinks(true);
+        setTimeout(() => document.getElementById("holiday-drinks")?.scrollIntoView({ behavior: "smooth", block: "start" }), 400);
+      }
       const next = new URLSearchParams(searchParams);
       next.delete("mode");
+      next.delete("holiday");
       setSearchParams(next, { replace: true });
     }
   }, [searchParams, setSearchParams]);
@@ -1067,7 +1073,24 @@ const Index = () => {
                 <GlasswareGuide />
 
                 <div className="space-y-4">
-                  {showDrinks ? (
+                  {showHolidayDrinks && (
+                    <section id="holiday-drinks" className="space-y-3 scroll-mt-24">
+                      <div className="flex items-center justify-between gap-3">
+                        <h2 className="font-serif text-2xl font-semibold">🦃 Holiday Drinks</h2>
+                        <Button variant="ghost" size="sm" className="min-h-10 gap-1" onClick={() => setShowHolidayDrinks(false)}>
+                          <X className="h-4 w-4" /> Close
+                        </Button>
+                      </div>
+                      <DrinkResults
+                        drinks={sampleDrinks.filter((d) => d.isHoliday)}
+                        savedDrinks={savedDrinks}
+                        onSave={handleSaveDrink}
+                        onAddToShopping={handleBulkAddToShopping}
+                        loading={dataLoading}
+                      />
+                    </section>
+                  )}
+                  {showHolidayDrinks ? null : showDrinks ? (
                     <DrinkResults
                       drinks={drinks}
                       savedDrinks={savedDrinks}

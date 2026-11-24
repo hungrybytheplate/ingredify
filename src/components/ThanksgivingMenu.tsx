@@ -49,6 +49,14 @@ export function ThanksgivingMenu() {
                 </Link>
               ))}
             </div>
+            {g.drinks && (
+              <Link
+                to="/?mode=drink&holiday=1"
+                className="mt-2 inline-flex min-h-10 items-center rounded-full bg-primary px-4 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+              >
+                Find more drinks →
+              </Link>
+            )}
           </div>
         ))}
       </div>

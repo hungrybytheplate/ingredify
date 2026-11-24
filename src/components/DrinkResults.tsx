@@ -118,6 +118,9 @@ export function DrinkResults({ drinks, savedDrinks, onSave, onAddToShopping, loa
   const smoothies = filteredDrinks.filter((d) => d.drinkType === "smoothie");
   const wellness = filteredDrinks.filter((d) => d.drinkType === "wellness");
   const hotDrinks = filteredDrinks.filter((d) => d.drinkType === "hot");
+  // Open on smoothies, unless empty — then the first type that has drinks
+  const defaultTab = smoothies.length > 0 ? "smoothie"
+    : ([["hot", hotDrinks], ["wellness", wellness], ["mocktail", mocktails], ["cocktail", cocktails]] as const).find(([, list]) => list.length > 0)?.[0] ?? "smoothie";
 
   const holidayCount = drinks.filter(d => d.isHoliday).length;
   const virginAvailable = drinks.some(d => !d.isAlcoholic || d.virginVersion);
@@ -300,7 +303,7 @@ export function DrinkResults({ drinks, savedDrinks, onSave, onAddToShopping, loa
       </div>
 
       {/* Drink Type Tabs */}
-      <Tabs defaultValue="smoothie" className="w-full">
+      <Tabs defaultValue={defaultTab} className="w-full">
         <TabsList className="w-full grid grid-cols-5 h-12 bg-muted/50 p-1 rounded-xl mb-6">
           <TabsTrigger
             value="hot"
