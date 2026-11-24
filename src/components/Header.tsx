@@ -70,7 +70,7 @@ export function Header({ onShowTour }: HeaderProps) {
           </motion.div>
           <div className="min-w-0 hidden sm:block">
             <SiteTitle className="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-foreground tracking-tight truncate">
-              Ingredify
+              Ingredify<sup className="ml-0.5 align-super text-[0.45em] font-semibold" aria-label="trademark">™</sup>
               {isHome && <span className="sr-only"> — Personal recipe finder and meal planner</span>}
             </SiteTitle>
             <p className="text-xs sm:text-sm text-muted-foreground font-medium">
