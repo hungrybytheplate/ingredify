@@ -369,6 +369,15 @@ const Index = () => {
 
   // Mode switching (Cook vs Drink)
   const [appMode, setAppMode] = useState<"cook" | "drink">("cook");
+  // Open the drinks section from links like /?mode=drink (e.g. drink pages)
+  useEffect(() => {
+    if (searchParams.get("mode") === "drink") {
+      setAppMode("drink");
+      const next = new URLSearchParams(searchParams);
+      next.delete("mode");
+      setSearchParams(next, { replace: true });
+    }
+  }, [searchParams, setSearchParams]);
   
   // Cook mode state
   // Persisted in localStorage so selections (including custom "Other"

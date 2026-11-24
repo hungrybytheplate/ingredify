@@ -64,7 +64,7 @@ export default function DrinkPage() {
             <span className="flex items-center gap-1.5"><GlassWater className="h-4 w-4" />{drink.glassType}</span>
           </div>
           <Button asChild className="gap-2">
-            <Link to="/">Find more drinks in Ingredify</Link>
+            <Link to="/?mode=drink">Find more drinks in Ingredify</Link>
           </Button>
         </header>
 
