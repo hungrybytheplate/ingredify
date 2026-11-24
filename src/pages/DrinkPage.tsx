@@ -49,7 +49,7 @@ export default function DrinkPage() {
 
       <main className="container max-w-3xl mx-auto px-4 py-6 space-y-6">
         <Button asChild variant="ghost" size="sm" className="gap-2 -ml-2">
-          <Link to="/"><ArrowLeft className="h-4 w-4" /> All recipes</Link>
+          <Link to="/?mode=drink"><ArrowLeft className="h-4 w-4" /> All drinks</Link>
         </Button>
 
         <header className="space-y-3">
