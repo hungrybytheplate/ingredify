@@ -1,7 +1,8 @@
-// Runs before `vite dev` and `vite build`; writes public/sitemap.xml with every public page and recipe page.
+// Runs before `vite dev` and `vite build`; writes public/sitemap.xml with every public page, recipe page and drink page.
 import { writeFileSync } from "fs";
 import { resolve } from "path";
 import { allRecipeSlugs } from "../src/lib/recipeSlug";
+import { allDrinkSlugs } from "../src/lib/drinkSlug";
 
 const BASE_URL = "https://ingredify.org";
 
@@ -16,6 +17,7 @@ const staticEntries = [
 const entries = [
   ...staticEntries,
   ...allRecipeSlugs().map((s) => ({ path: `/recipe/${s}`, changefreq: "monthly", priority: "0.7" })),
+  ...allDrinkSlugs().map((s) => ({ path: `/drink/${s}`, changefreq: "monthly", priority: "0.6" })),
 ];
 
 const xml = [

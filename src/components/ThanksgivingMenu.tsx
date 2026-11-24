@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { recipePath } from "@/lib/recipeSlug";
+import { drinkPath } from "@/lib/drinkSlug";
 
-const groups: { label: string; items: string[] }[] = [
+const groups: { label: string; items: string[]; drinks?: boolean }[] = [
   { label: "Main", items: ["Herb Butter Roast Turkey", "Cranberry Glazed Holiday Ham"] },
   {
     label: "Sides",
@@ -18,6 +19,7 @@ const groups: { label: string; items: string[] }[] = [
   },
   { label: "Appetizers", items: ["Baked Brie with Cranberries & Pecans", "Cranberry Brie Puff Pastry Bites", "Classic Deviled Eggs"] },
   { label: "Desserts", items: ["Classic Pumpkin Pie", "Classic Pecan Pie", "Dutch Apple Crumb Pie"] },
+  { label: "Drinks", drinks: true, items: ["Cranberry Apple Holiday Punch", "Mulled Apple Cider", "Virgin Eggnog", "Maple Bourbon Old Fashioned", "Spiked Apple Cider"] },
   { label: "Day After", items: ["Leftover Turkey Cranberry Sandwich"] },
 ];
 
@@ -40,7 +42,7 @@ export function ThanksgivingMenu() {
               {g.items.map((title) => (
                 <Link
                   key={title}
-                  to={recipePath({ title })}
+                  to={g.drinks ? drinkPath({ title }) : recipePath({ title })}
                   className="inline-flex min-h-10 items-center rounded-full border border-border bg-background px-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground"
                 >
                   {title}

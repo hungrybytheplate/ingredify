@@ -15,6 +15,7 @@ const Install = lazy(() => import("./pages/Install"));
 const Pantry = lazy(() => import("./pages/Pantry"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const RecipePage = lazy(() => import("./pages/RecipePage"));
+const DrinkPage = lazy(() => import("./pages/DrinkPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -40,6 +41,7 @@ function AnimatedRoutes() {
             <Route path="/pantry" element={<Pantry />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/recipe/:slug" element={<RecipePage />} />
+            <Route path="/drink/:slug" element={<DrinkPage />} />
             {/* Friendly aliases for paths visitors have tried */}
             <Route path="/shop" element={<Navigate to="/?tab=shopping" replace />} />
             <Route path="/search" element={<Navigate to="/?tab=ingredients" replace />} />

@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { SEOHead, generateRecipeSchema } from "@/components/SEOHead";
 import { PageSchema } from "@/components/PageSchema";
 import { getRecipeBySlug, recipePath } from "@/lib/recipeSlug";
+import { drinkPath } from "@/lib/drinkSlug";
 import { getAltForm } from "@/lib/dipWontonPairs";
 import { findPairingByName } from "@/lib/pairingLookup";
 import NotFound from "./NotFound";
@@ -120,8 +121,8 @@ export default function RecipePage() {
                 );
                 return (
                   <li key={side.name}>
-                    {match?.type === "recipe" ? (
-                      <Link to={recipePath(match.data)} className="block p-2.5 rounded-lg border border-border/50 hover:border-primary/50">{inner}</Link>
+                    {match ? (
+                      <Link to={match.type === "recipe" ? recipePath(match.data) : drinkPath(match.data)} className="block p-2.5 rounded-lg border border-border/50 hover:border-primary/50">{inner}</Link>
                     ) : (
                       <div className="p-2.5 rounded-lg border border-border/50">{inner}</div>
                     )}
