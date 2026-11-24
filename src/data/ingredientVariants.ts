@@ -472,6 +472,7 @@ export const ingredientVariants: Record<string, IngredientWithVariants> = {
     emoji: "🍓",
     variants: [
       { id: "strawberries", name: "Strawberries", emoji: "🍓" },
+      { id: "cranberries", name: "Cranberries", emoji: "🔴" },
       { id: "blueberries", name: "Blueberries", emoji: "🫐" },
       { id: "raspberries", name: "Raspberries", emoji: "🍇" },
       { id: "blackberries", name: "Blackberries", emoji: "🫐" },

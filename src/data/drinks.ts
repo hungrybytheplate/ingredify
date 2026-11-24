@@ -16819,6 +16819,48 @@ export const sampleDrinks: Drink[] = [
     nutrition: { calories: 130, sugar: 10, carbs: 12 },
     virginVersion: { replaces: [{ original: "champagne", substitute: "club-soda" }], notes: "Sparkling OJ is just as festive" },
   },
+  {
+    id: "cranberry-apple-holiday-punch",
+    title: "Cranberry Apple Holiday Punch",
+    drinkType: "mocktail",
+    description: "A sparkling, family-friendly punch for the Thanksgiving table",
+    prepTime: "10 min",
+    ingredients: ["cranberry-juice", "apple-juice", "ginger-ale", "orange", "cranberries"],
+    instructions: [
+      "In a large pitcher or punch bowl combine 4 cups cranberry juice and 4 cups apple cider or apple juice. Chill.",
+      "Just before serving, add 1 liter cold ginger ale and stir gently.",
+      "Float orange slices and a handful of fresh cranberries on top. Serve over ice."
+    ],
+    matchedIngredients: [],
+    glassType: "Punch Bowl",
+    garnish: "Orange slices, fresh cranberries, rosemary sprig",
+    isAlcoholic: false,
+    nutrition: { calories: 110, sugar: 26, carbs: 28 },
+    occasion: "party",
+    season: "fall",
+    isHoliday: true,
+  },
+  {
+    id: "maple-bourbon-old-fashioned",
+    title: "Maple Bourbon Old Fashioned",
+    drinkType: "cocktail",
+    description: "A cozy fall twist on the classic, sweetened with maple syrup",
+    prepTime: "5 min",
+    ingredients: ["bourbon", "maple-syrup", "angostura", "orange"],
+    instructions: [
+      "In a mixing glass stir 2 oz bourbon, 1/4 oz maple syrup and 2 dashes bitters with ice for 20 seconds.",
+      "Strain over a large ice cube in a rocks glass.",
+      "Express an orange peel over the drink and drop it in."
+    ],
+    matchedIngredients: [],
+    glassType: "Rocks Glass",
+    garnish: "Orange peel",
+    isAlcoholic: true,
+    nutrition: { calories: 160, sugar: 6, carbs: 6 },
+    occasion: "nightcap",
+    season: "fall",
+    isHoliday: true,
+  },
 ];
 
 // Key ingredients for drinks

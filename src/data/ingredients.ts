@@ -204,6 +204,7 @@ export const fridgeItems: IngredientCategory[] = [
     items: [
       // Chicken
       { id: "chicken-breast", name: "Chicken Breast", emoji: "🍗" },
+      { id: "turkey-whole", name: "Whole Turkey", emoji: "🦃" },
       { id: "chicken-thighs", name: "Chicken Thighs", emoji: "🍗" },
       { id: "chicken-tenders", name: "Chicken Tenders", emoji: "🍗" },
       { id: "chicken-wings", name: "Chicken Wings", emoji: "🍗" },
@@ -396,6 +397,7 @@ export const fridgeItems: IngredientCategory[] = [
       { id: "plantain", name: "Plantain", emoji: "🍌" },
       // Berries
       { id: "strawberries", name: "Strawberries", emoji: "🍓" },
+      { id: "cranberries", name: "Cranberries", emoji: "🔴" },
       { id: "blueberries", name: "Blueberries", emoji: "🫐" },
       { id: "raspberries", name: "Raspberries", emoji: "🍓" },
       { id: "blackberries", name: "Blackberries", emoji: "🫐" },
