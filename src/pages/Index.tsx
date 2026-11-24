@@ -1000,6 +1000,32 @@ const Index = () => {
               // DRINK MODE
               <Suspense fallback={<LazyFallback />}>
               <div className="grid gap-4 lg:grid-cols-2">
+                <details
+                  id="holiday-drinks"
+                  open={showHolidayDrinks}
+                  onToggle={(e) => setShowHolidayDrinks((e.currentTarget as HTMLDetailsElement).open)}
+                  className="group rounded-2xl border border-border/50 bg-card p-4 shadow-soft lg:col-span-2 scroll-mt-24"
+                >
+                  <summary className="flex min-h-10 cursor-pointer list-none items-center justify-between gap-3">
+                    <span>
+                      <h2 className="font-serif text-xl font-semibold text-foreground">🦃 Holiday Drinks</h2>
+                      <span className="block text-sm text-muted-foreground mt-1">Cider, punch, eggnog and cocktails for the season.</span>
+                    </span>
+                    <span className="shrink-0 rounded-full bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground group-open:hidden">See drinks</span>
+                    <span className="hidden shrink-0 text-sm font-medium text-muted-foreground group-open:inline">Hide</span>
+                  </summary>
+                  {showHolidayDrinks && (
+                    <div className="mt-4">
+                      <DrinkResults
+                        drinks={sampleDrinks.filter((d) => d.isHoliday)}
+                        savedDrinks={savedDrinks}
+                        onSave={handleSaveDrink}
+                        onAddToShopping={handleBulkAddToShopping}
+                        loading={dataLoading}
+                      />
+                    </div>
+                  )}
+                </details>
                 <Card className="shadow-elevated border-border/50 bg-card/90 backdrop-blur-sm overflow-hidden">
                   <div className="absolute top-0 left-0 w-full h-1 gradient-warm" />
                   <CardHeader className="pb-4">
@@ -1073,24 +1099,7 @@ const Index = () => {
                 <GlasswareGuide />
 
                 <div className="space-y-4">
-                  {showHolidayDrinks && (
-                    <section id="holiday-drinks" className="space-y-3 scroll-mt-24">
-                      <div className="flex items-center justify-between gap-3">
-                        <h2 className="font-serif text-2xl font-semibold">🦃 Holiday Drinks</h2>
-                        <Button variant="ghost" size="sm" className="min-h-10 gap-1" onClick={() => setShowHolidayDrinks(false)}>
-                          <X className="h-4 w-4" /> Close
-                        </Button>
-                      </div>
-                      <DrinkResults
-                        drinks={sampleDrinks.filter((d) => d.isHoliday)}
-                        savedDrinks={savedDrinks}
-                        onSave={handleSaveDrink}
-                        onAddToShopping={handleBulkAddToShopping}
-                        loading={dataLoading}
-                      />
-                    </section>
-                  )}
-                  {showHolidayDrinks ? null : showDrinks ? (
+                  {showDrinks ? (
                     <DrinkResults
                       drinks={drinks}
                       savedDrinks={savedDrinks}
