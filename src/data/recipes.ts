@@ -18580,7 +18580,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Golden, juicy whole turkey rubbed with garlic herb butter and roasted over onions and celery",
     cookTime: "4 hours",
     servings: 12,
-    ingredients: ["turkey-whole", "butter", "garlic", "sage", "thyme", "rosemary", "lemon", "onion", "celery", "chicken-broth", "salt", "pepper"],
+    ingredients: ["turkey", "butter", "garlic", "sage", "thyme", "rosemary", "lemon", "onion", "celery", "chicken-broth", "salt", "pepper"],
     instructions: [
       "Thaw a 12-14 lb turkey in the fridge (about 1 day per 4 lb). Remove neck and giblets and pat very dry. Let sit at room temperature 1 hour.",
       "Heat oven to 325°F. Mash 1 cup softened butter with 4 minced garlic cloves, 1 tbsp each chopped sage, thyme and rosemary, 2 tsp salt and 1 tsp pepper.",
@@ -18614,13 +18614,12 @@ export const sampleRecipes: Recipe[] = [
     instructions: [
       "Heat oven to 375°F. Trim 1 1/2 lb green beans into 2-inch pieces and boil 5 minutes. Drain and plunge into ice water, then drain well.",
       "Melt 3 tbsp butter in a large skillet. Cook 8 oz sliced mushrooms and 2 minced garlic cloves until browned, about 6 minutes.",
-      "Stir in 3 tbsp flour and cook 1 minute. Slowly whisk in 1 cup milk and 1 cup chicken broth. Simmer until thick, 3-4 minutes. Season with 1 tsp soy sauce, salt and pepper. (Short on time? Use one 10.5 oz can cream of mushroom soup plus 1/2 cup milk instead.)",
+      "Stir in 3 tbsp flour and cook 1 minute. Slowly whisk in 1 cup milk and 1 cup chicken broth. Simmer until thick, 3-4 minutes. Season with 1 tsp soy sauce, salt and pepper. (Vegetarian? Use vegetable broth. Short on time? Use one 10.5 oz can cream of mushroom soup plus 1/2 cup milk instead.)",
       "Crispy onions from scratch: thinly slice 1 onion, toss in 1/4 cup flour with a pinch of salt, and fry in 1/2 inch hot oil until golden, 2-3 minutes. Drain on paper towels. (Or use 1 1/3 cups store-bought fried onions.)",
       "Fold green beans and half the onions into the sauce. Spread in a 2-quart baking dish.",
       "Bake 20 minutes, top with remaining onions, and bake 5 more minutes until bubbly."
     ],
     matchedIngredients: [],
-    dietaryTags: ["vegetarian"],
     difficulty: "easy",
     nutrition: { calories: 170, protein: 4, carbs: 16, fat: 10 },
     cuisine: "american",
@@ -18638,7 +18637,7 @@ export const sampleRecipes: Recipe[] = [
     description: "Silky, savory gravy made from roast turkey drippings",
     cookTime: "15 min",
     servings: 10,
-    ingredients: ["butter", "flour", "chicken-broth", "thyme", "salt", "pepper"],
+    ingredients: ["turkey-drippings", "butter", "flour", "chicken-broth", "thyme", "salt", "pepper"],
     instructions: [
       "Pour the turkey pan drippings into a measuring cup and let the fat rise to the top. Spoon off 1/4 cup fat (add butter to make 1/4 cup if needed).",
       "Heat the fat in a saucepan over medium heat. Whisk in 1/4 cup flour and cook 2 minutes until light golden.",
@@ -18857,10 +18856,10 @@ export const sampleRecipes: Recipe[] = [
     description: "The day-after-Thanksgiving classic with turkey, stuffing, cranberry sauce and gravy mayo",
     cookTime: "10 min",
     servings: 2,
-    ingredients: ["turkey-whole", "bread-sourdough", "cranberries", "mayonnaise", "lettuce", "cheese-brie"],
+    ingredients: ["turkey", "bread-sourdough", "cranberries", "mayonnaise", "lettuce", "cheese-brie", "leftover-stuffing", "leftover-gravy"],
     instructions: [
       "Toast 4 slices sourdough bread.",
-      "Spread 2 slices with mayonnaise (stir in a spoonful of leftover gravy if you have it) and the other 2 with cranberry sauce.",
+      "Spread 2 slices with mayonnaise stirred with a spoonful of leftover gravy and the other 2 with cranberry sauce.",
       "Layer sliced leftover turkey, a scoop of warm leftover stuffing, a few slices of brie and lettuce.",
       "Close the sandwiches, slice in half and serve."
     ],
