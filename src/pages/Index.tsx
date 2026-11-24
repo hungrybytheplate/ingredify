@@ -1,3 +1,4 @@
+import { ThanksgivingMenu } from "@/components/ThanksgivingMenu";
 import { useState, useCallback, useEffect, useRef, lazy, Suspense } from "react";
 import { useSearchParams } from "react-router-dom";
 import { Header } from "@/components/Header";
@@ -861,6 +862,7 @@ const Index = () => {
             {appMode === "cook" ? (
               // COOK MODE
             <div className="grid gap-4 lg:grid-cols-2">
+                {!showRecipes && <ThanksgivingMenu />}
                 {isMobile && selectedIngredients.length === 0 && !showRecipes && (
                   <div className="rounded-2xl border border-border/50 bg-card p-4 shadow-soft lg:col-span-2">
                     <p className="font-serif text-xl font-semibold text-foreground">Tap what's in your fridge</p>
